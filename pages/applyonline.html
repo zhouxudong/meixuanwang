@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网申</title>
+    <link rel="stylesheet" href="../src/layui/css/layui.css"/>
+    <link rel="stylesheet" href="../build/css/common.css"/>
+    <link rel="stylesheet" href="../build/css/applyonline.css"/>
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_645070_yu1i5f2dbzxmkj4i.css"/>
+    <script src="//at.alicdn.com/t/font_645070_yu1i5f2dbzxmkj4i.js"></script>
+
+</head>
+<body>
+<div class="mainPage">
+    <div class="site-nav not-home">
+        <div class="site-width clearfix">
+            <a class="site-logo" title="Offerbar,专注应届职业机会" href="/">
+                <img class="_img" src="../statics/images/logo.png"/>
+                <p class="_main">OfferBar</p>
+                <p class="_sub">专注应届职业机会</p>
+            </a>
+
+            <div class="nav-list">
+                <ul>
+                    <li><a href="main.html">首页</a> </li>
+                    <li class="active"><a href="applyonline.html">网申</a></li>
+                    <li><a href="career.html">宣讲 · 宣讲会</a> </li>
+                    <li><a href="offerschool.html">Offer学院</a> </li>
+                    <li><a href="#">App</a> </li>
+                </ul>
+            </div>
+
+            <div class="login">
+                <button class="btn-login none">登录</button>
+
+                <div class="login-user">
+                    <div class="avatar_wrap">
+                        <img src="../statics/images/ad1.png" />
+                    </div>
+                    <div class="ucenter">
+                        <ul>
+                            <li><a href="">关注企业</a> </li>
+                            <li><a href="">收藏岗位</a> </li>
+                            <li><a href="">宣讲日程</a> </li>
+                            <li class="logout">退出登录</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="search-wraper" style="height: 50px;width: 745px;margin-top: 50px;">
+            <div class="search-box clearfix">
+                <!--<div class="search-sel">-->
+                <!--职位-->
+                <!--</div>-->
+
+                <div class="search-sel-top">
+                    <ul>
+                        <li data-target="job">职位</li>
+                        <li data-target="profession" class="active">专业</li>
+                        <li data-target="comp">公司</li>
+                    </ul>
+                </div>
+                <div class="search-input-box" style="width: 600px;">
+                    <input class="search-input"/>
+                    <i class="iconfont icon-sousuo"></i>
+                    <span class="_placeholder">职位、专业、公司</span>
+                    <span class="_result"><i class="search-num">83737463</i>个职位等你参与</span>
+                    <div class="search-hot clearfix">
+                        <span class="fl">热门搜索：</span>
+                        <ul class="_ul clearfix">
+                            <li class="_hotitem">产品经理</li>
+                            <li class="_hotitem">Java工程师</li>
+                            <li class="_hotitem">产品运营</li>
+                            <li class="_hotitem">PHP</li>
+                            <li class="_hotitem">销售经理</li>
+                            <li class="_hotitem">C++</li>
+                            <li class="_hotitem">产品运营</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="search-btn">
+                    搜索
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content clearfix">
+        <div class="cont-l">
+            <div class="d-selector">
+                <div class="sl-tit clearfix">
+                    <div class="sl-key" style="width: 75px;">
+                        <span>已选择：</span>
+                    </div>
+                    <div class="sl-chosed clearfix">
+                        <ul>
+                            <li>博士 <span class="_close">×</span></li>
+                            <li>世界500强 <span class="_close">×</span></li>
+                        </ul>
+                    </div>
+                    <span class="clear-chose fl"><i class="iconfont icon-lajitong-"></i> 清空筛选</span>
+                </div>
+
+
+
+                <div class="sl-wrap clearfix">
+                    <div class="sl-key">
+                        <span class="_key">工作城市：</span>
+                        <span class="active">不限</span>
+                    </div>
+                    <div class="sl-value">
+                        <div class="sl-v-list">
+                            <ul>
+                                <li>北京</li>
+                                <li>上海</li>
+                                <li>广州</li>
+                                <li>深圳</li>
+                                <li>武汉</li>
+                                <li>长春</li>
+                                <li>成都</li>
+                                <li>深圳</li>
+                                <li class="_allcity">全部城市<i class="iconfont icon-moreyouce-"></i> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sl-wrap clearfix">
+                    <div class="sl-key">
+                        <span class="_key">公司大类：</span>
+                        <span class="active">不限</span>
+                    </div>
+                    <div class="sl-value">
+                        <div class="sl-v-list">
+                            <ul>
+                                <li>金融行业</li>
+                                <li>IT互联网</li>
+                                <li>金融行业</li>
+                                <li>IT互联网</li>
+                                <li>金融行业</li>
+                                <li>IT互联网</li>
+                                <li>金融行业</li>
+                                <li>IT互联网</li><li>金融行业</li>
+                                <li>IT互联网</li>
+                                <li>金融行业</li>
+                                <li>IT互联网</li>
+                                <li>金融行业</li>
+                                <li>IT互联网</li>
+                                <li>金融行业</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sl-wrap clearfix">
+                    <div class="sl-key">
+                        <span class="_key">学历要求：</span>
+                        <span class="active">不限</span>
+                    </div>
+                    <div class="sl-value">
+                        <div class="sl-v-list">
+                            <ul>
+                                <li>大专</li>
+                                <li>本科</li>
+                                <li>硕士</li>
+                                <li>博士</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sl-wrap clearfix">
+                    <div class="sl-key">
+                        <span class="_key">公司标签：</span>
+                        <span class="active">不限</span>
+                    </div>
+                    <div class="sl-value">
+                        <div class="sl-v-list">
+                            <ul>
+                                <li>世界500强</li>
+                                <li>中国500强</li>
+                                <li>国企</li>
+                                <li>外企</li>
+                                <li>上市公司</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="search-result">
+                <div class="search-filter clearfix">
+                    <ul>
+                        <li class="active">最近更新</li>
+                        <li>即将截止</li>
+                        <li>关注度</li>
+                    </ul>
+                </div>
+
+                <div class="search-list clearfix">
+                    <div class="search-item">
+                        <div class="_job">
+                            <p class="_tit">资深视觉设计师</p>
+                            <p class="_sub">
+                                <span>工作地点：<i class="_addr">北京</i></span>
+                                <span class="ml25">学历：<i class="_edu">本科</i></span>
+                                <span class="_time ml50">网申时间：4.27-5.30</span>
+                            </p>
+                        </div>
+
+                        <div class="_comp">
+
+                            <div class="comp-cont">
+                                <p class="_tit">闲时网络科技有限公司</p>
+                                <p class="_sub">移动互联网 / 2000人以上</p>
+                            </div>
+                            <img class="comp-logo" src="../statics/images/logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="search-item">
+                        <div class="_job">
+                            <p class="_tit">资深视觉设计师</p>
+                            <p class="_sub">
+                                <span>工作地点：<i class="_addr">北京</i></span>
+                                <span class="ml25">学历：<i class="_edu">本科</i></span>
+                                <span class="_time ml50">网申时间：4.27-5.30</span>
+                            </p>
+                        </div>
+
+                        <div class="_comp">
+
+                            <div class="comp-cont">
+                                <p class="_tit">闲时网络科技有限公司</p>
+                                <p class="_sub">移动互联网 / 2000人以上</p>
+                            </div>
+                            <img class="comp-logo" src="../statics/images/logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="search-item">
+                        <div class="_job">
+                            <p class="_tit">资深视觉设计师</p>
+                            <p class="_sub">
+                                <span>工作地点：<i class="_addr">北京</i></span>
+                                <span class="ml25">学历：<i class="_edu">本科</i></span>
+                                <span class="_time ml50">网申时间：4.27-5.30</span>
+                            </p>
+                        </div>
+
+                        <div class="_comp">
+
+                            <div class="comp-cont">
+                                <p class="_tit">闲时网络科技有限公司</p>
+                                <p class="_sub">移动互联网 / 2000人以上</p>
+                            </div>
+                            <img class="comp-logo" src="../statics/images/logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="search-item">
+                        <div class="_job">
+                            <p class="_tit">资深视觉设计师</p>
+                            <p class="_sub">
+                                <span>工作地点：<i class="_addr">北京</i></span>
+                                <span class="ml25">学历：<i class="_edu">本科</i></span>
+                                <span class="_time ml50">网申时间：4.27-5.30</span>
+                            </p>
+                        </div>
+
+                        <div class="_comp">
+
+                            <div class="comp-cont">
+                                <p class="_tit">闲时网络科技有限公司</p>
+                                <p class="_sub">移动互联网 / 2000人以上</p>
+                            </div>
+                            <img class="comp-logo" src="../statics/images/logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="search-item">
+                        <div class="_job">
+                            <p class="_tit">资深视觉设计师</p>
+                            <p class="_sub">
+                                <span>工作地点：<i class="_addr">北京</i></span>
+                                <span class="ml25">学历：<i class="_edu">本科</i></span>
+                                <span class="_time ml50">网申时间：4.27-5.30</span>
+                            </p>
+                        </div>
+
+                        <div class="_comp">
+
+                            <div class="comp-cont">
+                                <p class="_tit">闲时网络科技有限公司</p>
+                                <p class="_sub">移动互联网/2000人以上/天使轮投资</p>
+                            </div>
+                            <img class="comp-logo" src="../statics/images/logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="search-item">
+                        <div class="_job">
+                            <p class="_tit">资深视觉设计师</p>
+                            <p class="_sub">
+                                <span>工作地点：<i class="_addr">北京</i></span>
+                                <span class="ml25">学历：<i class="_edu">本科</i></span>
+                                <span class="_time ml50">网申时间：4.27-5.30</span>
+                            </p>
+                        </div>
+
+                        <div class="_comp">
+
+                            <div class="comp-cont">
+                                <p class="_tit">闲时网络科技有限公司</p>
+                                <p class="_sub">移动互联网/2000人以上/天使轮投资</p>
+                            </div>
+                            <img class="comp-logo" src="../statics/images/logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="search-item">
+                        <div class="_job">
+                            <p class="_tit">资深视觉设计师</p>
+                            <p class="_sub">
+                                <span>工作地点：<i class="_addr">北京</i></span>
+                                <span class="ml25">学历：<i class="_edu">本科</i></span>
+                                <span class="_time ml50">网申时间：4.27-5.30</span>
+                            </p>
+                        </div>
+
+                        <div class="_comp">
+
+                            <div class="comp-cont">
+                                <p class="_tit">闲时网络科技有限公司</p>
+                                <p class="_sub">移动互联网/2000人以上/天使轮投资</p>
+                            </div>
+                            <img class="comp-logo" src="../statics/images/logo.png"/>
+                        </div>
+                    </div>
+
+                    <div class="search-item">
+                        <div class="_job">
+                            <p class="_tit">资深视觉设计师</p>
+                            <p class="_sub">
+                                <span>工作地点：<i class="_addr">北京</i></span>
+                                <span class="ml25">学历：<i class="_edu">本科</i></span>
+                                <span class="_time ml50">网申时间：4.27-5.30</span>
+                            </p>
+                        </div>
+
+                        <div class="_comp">
+
+                            <div class="comp-cont">
+                                <p class="_tit">闲时网络科技有限公司</p>
+                                <p class="_sub">移动互联网/2000人以上/天使轮投资</p>
+                            </div>
+                            <img class="comp-logo" src="../statics/images/logo.png"/>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="company-list clearfix none">
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+                    <div class="_item">
+                        <img class="_logo" src="../statics/images/logo.png"/>
+                        <div class="_cont">
+                            <p class="_main">机智云分</p>
+                            <p class="_sub">全国数字建筑产业平台</p>
+                        </div>
+
+
+                        <div class="fujia clearfix">
+                            <span class="_job">在招职位<span class="_bracket">(100)</span></span>
+                            <span class="_career">网申时间<span class="_bracket">(4-27截止)</span></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tc" id="pcontainer" style="margin-top: 20px;">
+
+                </div>
+            </div>
+
+            <div class="cont-tip">
+                <p class="_smTip"><i style="color: orange;font-size: 24px;vertical-align: sub;" class="iconfont icon-xiaotieshi-"></i>小贴士</p>
+                <p>少许宣讲可能会临时改变时间，地点，甚至是时间，如果距离较远，可以选跟公司、学校确认，避免普通。</p>
+            </div>
+
+        </div>
+        <div class="cont-r">
+            <div class="ad_list">
+                <div class="ad_item">
+                    <img src="../statics/images/ad1.png" />
+                </div>
+                <div class="ad_item">
+                    <img src="../statics/images/ad2.png" />
+                </div>
+                <div class="ad_item">
+                    <img src="../statics/images/ad4.png" />
+                </div>
+                <div class="ad_item">
+                    <img src="../statics/images/ad3.png" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer" >
+        <div class="content">
+            <div class="company_load clearfix">
+                <div class="company_logo clearfix fl">
+                    <div class="logo_img fl">
+                        <img src="../statics/images/logo.png" style="width: 58px;"/>
+                    </div>
+                    <div class="logo_content fl">
+                        <span class="logo_tit">OfferBar</span>
+                        <p class="logo_detail">专注应届职业机会</p >
+                    </div>
+                </div>
+                <div class="load_kind clearfix fl">
+                    <div class="ios load_item fl">
+                        <span><i class="iconfont icon-ios"></i> </span>
+                        <span>IOS客户端</span>
+                        <span><i class="iconfont icon-arrow-top"></i> </span>
+                    </div>
+                    <div class="androw load_item fl">
+                        <span><i class="iconfont icon-android"></i> </span>
+                        <span>安卓客户端</span>
+                        <span><i class="iconfont icon-arrow-top"></i> </span>
+                    </div>
+                    <div class="public load_item fl">
+                        <span><i class="iconfont icon-yooxi"></i> </span>
+                        <span>微信公众号</span>
+                        <span><i class="iconfont icon-arrow-top"></i> </span>
+                    </div>
+                    <div class="smallApp load_item fl">
+                        <span><i class="iconfont icon-xiaochengxu"></i> </span>
+                        <span>微信小程序</span>
+                        <span><i class="iconfont icon-arrow-top"></i> </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_line">
+
+            </div>
+            <div class="footer_last">
+                <span class="lastL">信息发布&雇主品牌宣传&广告投放&emsp;&emsp;010-9999 999</span>
+                <span class="lastR">@2018OfferBar.com 京IPC备5978563211号-1&nbsp;北京闲时网络科技有限公司</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="../statics/js/jquery.js"></script>
+<script src="../src/layui/layui.js"></script>
+<script src="../statics/js/utils.js"></script>
+<script>
+    layui.use('laypage', function(){
+        var laypage = layui.laypage;
+
+        //执行一个laypage实例
+        laypage.render({
+            elem: 'pcontainer',
+            count: 150, //数据总数，从服务端得到
+            theme: "#09c5d5",
+            hash: "paging",
+            limit: 10
+        });
+    });
+
+    $(".search-sel-top li").on("click", function () {
+        var target = $(this).data("target");
+
+        $(".search-sel-top li").removeClass("active");
+        $(this).addClass("active");
+
+        if(target == "comp"){
+            $(".search-list").hide();
+            $(".company-list").show();
+        }else{
+            $(".search-list").show();
+            $(".company-list").hide();
+        }
+    })
+
+
+</script>
+
+
+</html>

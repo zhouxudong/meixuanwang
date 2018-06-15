@@ -1,0 +1,340 @@
+.header {
+  background-color: #F1F5F4;
+  height: 180px;
+  border: 1px solid transparent;
+}
+.main-content {
+  width: 1200px;
+  margin: 0 auto 56px;
+  padding-top: 30px;
+}
+.main-content .cont-l {
+  width: 935px;
+  float: left;
+}
+.main-content .cont-r {
+  width: 252px;
+  float: right;
+}
+.ad_list .ad_item {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.d-selector {
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  padding: 0 35px 15px;
+}
+.d-selector:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+}
+.d-selector .sl-tit {
+  border-bottom: 1px dashed #eaeeed;
+  padding: 10px 0;
+  line-height: 28px;
+}
+.d-selector .sl-tit .clear-chose {
+  margin: 3px 10px;
+  color: #999999;
+  cursor: pointer;
+}
+.d-selector .sl-wrap {
+  margin: 10px 0;
+}
+.d-selector .sl-wrap .sl-key {
+  line-height: 24px;
+}
+.d-selector .sl-key {
+  float: left;
+  width: 130px;
+  text-align: left;
+  margin: 3px 0;
+}
+.d-selector .sl-key .active {
+  background-color: #09c5d5;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 2px;
+  padding: 0px 10px;
+  line-height: 24px;
+  display: inline-block;
+}
+.d-selector .sl-key ._key {
+  color: #999999;
+}
+.d-selector .sl-chosed {
+  float: left;
+}
+.d-selector .sl-chosed ._close {
+  cursor: pointer;
+}
+.d-selector .sl-chosed li {
+  float: left;
+  margin: 3px 16px 0 0;
+  padding: 0 10px;
+  border: 1px dashed #09c5d5;
+  border-radius: 2px;
+  color: #09c5d5;
+}
+.d-selector .sl-value {
+  margin-left: 130px;
+}
+.d-selector .sl-value .sl-v-list li {
+  float: left;
+  margin: 3px 0;
+  padding: 0 15px;
+  line-height: 24px;
+  cursor: pointer;
+  color: #555555;
+}
+.d-selector .sl-value .sl-v-list li._date {
+  margin-left: 25px;
+  color: #09c5d5;
+}
+.d-selector .sl-value .sl-v-list li._allcity {
+  color: #09c5d5;
+}
+.d-selector .sl-value .sl-v-list li._allSch {
+  color: #09c5d5;
+}
+.d-selector .sl-value .sl-v-list li .dateFilter {
+  width: 70px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  left: -55px;
+  font-size: 0;
+}
+.d-selector .sl-value .sl-v-list li.active {
+  background-color: #09c5d5;
+  color: #ffffff;
+  border-radius: 2px;
+}
+.search-result {
+  margin: 30px auto;
+}
+.search-result .search-filter {
+  border-bottom: 1px solid #eaeeed;
+  margin-bottom: 20px;
+}
+.search-result .search-filter li {
+  cursor: pointer;
+  float: left;
+  margin-right: 50px;
+  line-height: 36px;
+  color: #999999;
+}
+.search-result .search-filter li.active {
+  color: #09c5d5;
+  border-bottom: 1px solid #09c5d5;
+}
+.search-result .company-list ._item {
+  width: 297px;
+  height: 120px;
+  float: left;
+  margin-right: 22px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 22px;
+  padding: 15px 17px;
+}
+.search-result .company-list ._item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.search-result .company-list ._item:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+}
+.search-result .company-list ._item .fujia {
+  border-top: 1px dashed #eaeeed;
+  line-height: 42px;
+}
+.search-result .company-list ._item .fujia ._bracket {
+  color: #FD7A4B;
+}
+.search-result .company-list ._item ._cont {
+  margin: 0 0 10px 60px;
+}
+.search-result .company-list ._main {
+  font-size: 16px;
+  color: #555555;
+}
+.search-result .company-list ._logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+.search-result .company-list ._sub {
+  color: #777777;
+  line-height: 2;
+  margin-bottom: 6px;
+}
+.search-result .company-list ._job,
+.search-result .company-list ._career {
+  color: #999999;
+}
+.search-result .company-list ._job {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.search-result .company-list ._career {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+.search-result .search-list .search-item {
+  width: 100%;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  border-bottom: 15px solid #fafafa;
+  cursor: pointer;
+  height: 109px;
+  padding: 15px 25px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.search-result .search-list .search-item:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+  border-bottom: 15px solid #fafafa;
+}
+.search-result .search-list .search-item ._tit {
+  font-size: 16px;
+  color: #555555;
+  line-height: 30px;
+}
+.search-result .search-list .search-item ._sub {
+  color: #999999;
+  margin-top: 5px;
+}
+.search-result .search-list .search-item ._job {
+  width: 530px;
+  float: left;
+}
+.search-result .search-list .search-item ._job ._tit {
+  position: relative;
+  padding-left: 10px;
+}
+.search-result .search-list .search-item ._job ._tit:before {
+  content: " ";
+  position: absolute;
+  height: 15px;
+  border-left: 2px solid #09c5d5;
+  left: 0;
+  top: 8px;
+}
+.search-result .search-list .search-item ._job ._addr,
+.search-result .search-list .search-item ._job ._edu {
+  font-style: normal;
+  color: #555555;
+}
+.search-result .search-list .search-item ._job ._time {
+  color: #FD7A4B;
+}
+.search-result .search-list .search-item ._comp {
+  width: 310px;
+  float: left;
+}
+.search-result .search-list .search-item .comp-logo {
+  position: absolute;
+  right: 28px;
+  top: 18px;
+  width: 50px;
+  height: 50px;
+}
+.search-result .search-list .career-item {
+  height: 104px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  padding: 25px 15px;
+  margin-bottom: 10px;
+}
+.search-result .search-list .career-item:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+}
+.search-result .search-list .career-item ._tit {
+  font-size: 16px;
+  color: #555555;
+}
+.search-result .search-list .career-item ._tit ._act {
+  color: #FD7A4B;
+}
+.search-result .search-list .career-item ._sub {
+  color: #999999;
+  margin-top: 8px;
+}
+.search-result .search-list .career-item .comp-logo {
+  float: left;
+  height: 50px;
+  margin-right: 10px;
+}
+.search-result .search-list .career-item ._comp {
+  width: 257px;
+  float: left;
+  margin-left: 9px;
+}
+.search-result .search-list .career-item ._school {
+  width: 215px;
+  float: left;
+}
+.search-result .search-list .career-item ._time {
+  width: 260px;
+  float: left;
+}
+.search-result .search-list .career-item ._opera {
+  float: left;
+  margin-top: 10px;
+}
+.search-result .search-list .career-item ._opera > div {
+  display: inline-block;
+  border: 1px solid #09c5d5;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #09c5d5;
+  cursor: pointer;
+  line-height: 28px;
+  width: 66px;
+  text-align: center;
+}
+.search-result .search-list .career-item ._opera > div.btn-addtime {
+  border-color: #cccccc;
+  color: #999999;
+}
+.search-result .search-list .career-item ._opera > div:hover {
+  background-color: #09c5d5;
+  color: #ffffff;
+  border-color: #09c5d5;
+}
+.search-result .more-jobs {
+  width: 388px;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #09c5d5;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #09c5d5;
+  margin: 30px auto 0;
+  font-size: 16px;
+}
+.search-result .more-jobs:hover {
+  background-color: #09c5d5;
+  color: #ffffff;
+}
+.cont-tip {
+  height: 90px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  background-color: #F7FCFC;
+  padding: 12px 20px;
+  color: #999999;
+}
+.cont-tip ._smTip {
+  color: #777777;
+  margin-bottom: 2px;
+}

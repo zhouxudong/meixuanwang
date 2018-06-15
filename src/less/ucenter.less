@@ -1,0 +1,229 @@
+@import "variable";
+.page-cont{
+  width: @site_width;
+  margin: 35px auto;
+
+  .cont-l{
+    float: left;
+    width: @cont_l_width;
+  }
+  .cont-r{
+    float: right;
+    width:@cont_r_width;
+
+    .ad_list{
+      .ad_item{
+        margin-bottom:5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .uc_tit{
+    font-size: 24px;
+    color: @color_main;
+    margin-bottom: 10px;
+  }
+}
+.search-list{
+
+  //网申
+  .search-item{
+    width: 100%;
+    border: 1px solid @card_border_color;
+    border-radius: @card_border_radius;
+    border-bottom: 15px solid #fafafa;
+    cursor: pointer;
+    height: 109px;
+    padding: 15px 25px;
+    position: relative;
+    margin-bottom: 10px;
+    &:hover{
+      .card_box_shadow(0,0);
+
+      border-bottom: 15px solid #fafafa;
+    }
+    ._tit{
+      font-size: 16px;
+      color: @font_color2;
+      line-height: 30px;
+    }
+    ._sub{
+      color: @font_color4;
+      margin-top: 5px;
+    }
+
+    ._job{
+      width: 530px;
+      float: left;
+
+      ._tit{
+        position: relative;
+        padding-left: 10px;
+        &:before{
+          content: " ";
+          position: absolute;
+          height: 15px;
+          border-left: 2px solid @color_main;
+          left: 0;
+          top: 8px;
+        }
+      }
+
+      ._addr, ._edu{
+        font-style: normal;
+        color: @font_color2;
+      }
+      ._time{
+        color: @color_secondary;
+      }
+    }
+    ._comp{
+      width: 310px;
+      float: left;
+    }
+    .comp-logo{
+      position: absolute;
+      right: 28px;
+      top: 18px;
+      width: 50px;
+      height: 50px;
+    }
+
+  }
+
+  //宣讲·宣讲会
+  .career-item{
+    height: 104px;
+    border: 1px solid @card_border_color;
+    border-radius: @card_border_radius;
+    padding: 25px 15px;
+    margin-bottom: 10px;
+    &:hover{
+      .card_box_shadow(0,0);
+    }
+
+
+    ._tit{
+      font-size: 16px;
+      color: @font_color2;
+
+      ._act{
+        color: @color_secondary;
+      }
+    }
+    ._sub{
+      color: @font_color4;
+      margin-top: 8px;
+    }
+    .comp-logo{
+      float: left;
+      //width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    ._comp{
+      width: 257px;
+      float: left;
+      margin-left: 9px;
+    }
+    ._school{
+      width:215px;
+      float: left;
+    }
+    ._time{
+      width: 260px;
+      float: left;
+    }
+    ._opera{
+      float: left;
+      margin-top: 10px;
+      & > div{
+        display: inline-block;
+        border: 1px solid @color_main;
+        border-radius: 2px;
+        font-size: 12px;
+        color: @color_main;
+        cursor: pointer;
+        line-height: 28px;
+        width: 66px;
+        text-align: center;
+
+        &.btn-addtime{
+          border-color: #cccccc;
+          color: @font_color4;
+        }
+
+        &:hover{
+          background-color: @color_main;
+          color: #ffffff;
+          border-color: @color_main;
+
+        }
+      }
+    }
+  }
+}
+.company-list{
+  ._item{
+    width: 297px;
+    height: 120px;
+    float: left;
+    margin-right: 22px;
+    border: 1px solid @card_border_color;
+    border-radius: @card_border_radius;
+    cursor: pointer;
+    margin-bottom: 22px;
+    padding: 15px 17px;
+
+    &:nth-of-type(3n){
+      margin-right: 0;
+    }
+
+    &:hover{
+      .card_box_shadow(0, 0);
+    }
+
+    .fujia{
+      border-top: 1px dashed @card_border_color;
+      line-height: 42px;
+
+      ._bracket{
+        color: @color_secondary;
+      }
+    }
+    ._cont{
+      margin: 0 0 10px 60px;
+    }
+  }
+  ._main{
+    font-size: 16px;
+    color: @font_color2;
+  }
+  ._logo{
+    float: left;
+    width: 50px;
+    height: 50px;
+  }
+  ._sub{
+    color: @font_color3;
+    line-height: 2;
+    margin-bottom: 6px;
+  }
+
+  ._job, ._career{
+    color: @font_color4;
+  }
+  ._job{
+    float: left;
+    width: 50%;
+    text-align: left;
+    //border-right: 1px dashed @card_border_color;
+  }
+  ._career{
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+}

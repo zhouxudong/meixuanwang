@@ -1,0 +1,477 @@
+@import "variable";
+
+.company{
+  background-color: #F2F5F4;
+  padding-top: 45px;
+
+  .compant_tit{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .company_main{
+    width: 1042px;
+    height: 162px;
+    background: #FFFFFF;
+    border: 1px solid @card_border_color;
+    border-radius: @card_border_radius;
+    margin: 0 auto;
+    position: relative;
+    padding: 25px 32px;
+
+    &:hover{
+      .card_box_shadow(0,0);
+    }
+    .logo > img{
+      height: 110px;
+      width: 110px;
+    }
+    .company_name{
+      font-size: 24px;
+      color: @font_color1;
+    }
+
+    .company_detail{
+      margin-left: 20px;
+    }
+
+    .company_attent{
+      color: @font_color4;
+      cursor: pointer;
+      margin-left: 12px;
+      border: 1px solid @card_border_color;
+      border-radius: @card_border_radius;
+      padding: 4px 8px;
+      vertical-align: text-bottom;
+
+      &:hover{
+        border: 1px solid @color_main;
+        background-color: @color_main;
+        color: #ffffff;
+      }
+    }
+    .company_http{
+      margin: 2px 0 25px;
+      color: @color_main;
+
+      & > a{
+        color: @color_main;
+      }
+    }
+
+    .company_size{
+      font-size: 12px;
+      color: @font_color3;
+      margin-right: 17px;
+      border: 1px solid @card_border_color;
+      border-radius: @card_border_radius;
+      padding: 5.5px 6px
+    }
+    .company_ability{
+      float: right;
+      text-align: right;
+    }
+
+    .company_search{
+      color: #FFFFFF;
+      cursor: pointer;
+      .bg_gra;
+      border-radius: @card_border_radius;
+      display: inline-block;
+      width: 100px;
+      height: 36px;
+      text-align: center;
+      line-height: 36px;
+      margin: 12px 0 10px 0;
+
+    }
+
+    .apply_date{
+      color: @font_color4;
+
+      span{
+        color: @font_color2;
+      }
+    }
+  }
+}
+
+.company_nav{
+  width: 600px;
+  margin: 0 auto;
+  color: @font_color2;
+  text-align: center;
+  line-height: 0;
+
+  ul{
+    display: inline-block;
+    line-height: 38px;
+  }
+  ul>li{
+    margin: 0 25px;
+    float: left;
+    cursor: pointer;
+    &.active{
+      color: @color_main;
+      border-bottom: 2px solid @color_main;
+    }
+  }
+}
+.changeTit{
+  ._ttt{
+    position: relative;
+    z-index: 100;
+    padding: 2px 10px;
+    background-color: #ffffff;
+  }
+  .shadow-font{
+    font-size: 64px;
+    color: #f5f5f5;
+    position: absolute;
+    left: 50%;
+    top: -36px;
+    z-index: 99;
+    margin-left: -28px;
+  }
+}
+.info-wrap{
+  max-width: 800px;
+  margin:0 auto;
+
+  .content_tit{
+    font-size: 16px;
+    color: @font_color1;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+  }
+  .content_detail{
+    color: @font_color3;
+    line-height: 22px;
+    text-align: justify;
+
+    & img{
+      border-radius: @card_border_radius;
+    }
+
+    a{
+      color: @color_main;
+    }
+  }
+  .content_photo{
+    width: 792px;
+    height: 444px;
+  }
+
+  .content_map{
+    width: 794px;
+    height: 198px;
+  }
+}
+
+.companyNews{
+  .company_intro{
+    margin-top: 40px;
+  }
+}
+
+/*招聘简章*/
+.regulation{
+  width: 800px;
+  margin:0 auto;
+  margin-bottom: 200px;
+}
+.regulation_content ._cname{
+  font-size: 16px;
+  color: @font_color1;
+  margin-top:40px ;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+.regulation_content ._cont{
+  font-size: 14px;
+  color: @font_color3;
+  line-height: 22px;
+}
+
+
+//校招职位
+.schoolAdvert{
+  max-width: 1042px;
+  margin: 0 auto;
+  .advertItem{
+    height: 80px;
+    width: 100%;
+    border-radius: @card_border_radius;
+    padding: 15px 23px;
+    border: 1px solid @card_border_color;
+    cursor: pointer;
+    margin-bottom: 18px;
+    position: relative;
+    border-left: 2px solid @color_main;
+
+    &:hover{
+      .card_box_shadow(0,0);
+
+      border-left: 2px solid @color_main;
+    }
+
+    //&::before{
+    //  content: "";
+    //  height: 80px;
+    //  width: 2px;
+    //  background-color: @color_main;
+    //  position: absolute;
+    //  left: -1px;
+    //  top: -2px;
+    //}
+
+    .jobName {
+      ._profession, ._profe{
+        color: @color_secondary;
+      }
+    }
+
+    .jobName p{
+      font-size: 16px;
+      color: @color_main;
+    }
+    .jobName span{
+      color: @font_color3;
+      margin-right: 26px;
+    }
+    .lookMore{
+      width: 72px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: @card_border_radius;
+      font-size: 12px;
+      color: @color_main;
+      cursor: pointer;
+      text-align: center;
+      margin-top: 8px;
+      margin-right: 8px;
+      border: 1px solid @color_main;
+
+      a{
+        color: inherit;
+        display: block;
+      }
+      &:hover{
+        background: @color_main;
+        color: #ffffff;
+      }
+      p{
+        line-height: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+//宣讲。双选会
+/*双选会*/
+
+.career_table{
+  width: 1042px;
+  margin: 24px auto;
+
+  .career-cancel{
+    td{
+      color: @font_color4;
+    }
+  }
+  ._adr{
+    color: @color_secondary;
+  }
+
+  .add_day{
+    width: 66px;
+    height: 28px;
+    border-radius: @card_border_radius;
+    color: @color_main;
+    cursor: pointer;
+    border: 1px solid @color_main;
+
+    &._cancel{
+      border: 1px solid @card_border_color;
+      color: @font_color4;
+
+      &:hover{
+        background-color: #ffffff;
+        color: @font_color4;
+      }
+    }
+
+    &:hover{
+      background-color: @color_main;
+      color: #ffffff;
+    }
+  }
+  td,th{
+    text-align: center;
+    height: 56px;
+  }
+  th{
+    font-weight: 400;
+    color: @font_color1;
+  }
+  thead{
+    background-color: #f2f5f4;
+
+  }
+  tbody{
+    border: 1px solid @card_border_color;
+    padding: 0 20px;
+
+    tr{
+      border-bottom: 1px dashed @card_border_color;
+    }
+  }
+}
+
+
+.job-info{
+  max-width: 1042px;
+  margin:25px auto;
+
+  .toCollect{
+    color: @font_color2;
+    border: 1px solid @card_border_color;
+    border-radius: @card_border_radius;
+    //width: 64px;
+    padding: 0 10px 0 8px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 8px;
+
+    &._collected{
+      border: 1px solid #f33030;
+      color: #f33030;
+    }
+
+  }
+  .nowApply{
+    text-align: center;
+    margin-top: 40px;
+    p{
+      font-size: 14px;
+      color: @font_color4;
+      margin-top: 8px;
+    }
+    .nowApply_btn{
+      width: 140px;
+      height: 50px;
+      //background-image: linear-gradient(-90deg, #0DD0BF 10%, #06C1DC 93%);
+cursor: pointer;
+      .bg_gra();
+
+      border-radius: 4px;
+      font-size: 16px;
+      color: #FFFFFF;
+      margin: 0 auto;
+      line-height: 50px;
+      text-align: center;
+
+      &:hover{
+        .bg_gra_hover;
+      }
+    }
+  }
+
+  .reminder{
+    width: 100%;
+    background: #F7FCFC;
+    border: 1px solid @card_border_color;
+    margin: 10px 0 50px;
+    padding: 9px 28px 18px;
+    ._smTip{
+      color: @font_color2;
+    }
+
+    span{
+      font-size: 14px;
+      color: #333333;
+      line-height: 22px;
+    }
+    p{
+      color: @font_color4;
+      line-height: 28px;
+      margin-top: 8px;
+    }
+  }
+
+}
+
+.lookMore p{
+  height: 28px;
+  line-height: 28px;
+}
+.jobDes{
+  margin-top: 40px;
+  .jobDes_des{
+    font-size: 16px;
+    color: @font_color2;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+  .otherjob-btn{
+    float: right;
+    cursor: pointer;
+    width: 128px;
+    height: 28px;
+    line-height: 26px;
+    text-align: center;
+    border: @color_main;
+    border: 1px solid @color_main;
+    border-radius: @card_border_radius;
+    color: @color_main;
+    font-size: 12px;
+    font-weight: 400;
+
+    &:hover{
+      border: 1px solid @color_main;
+      color: #ffffff;
+      background-color: @color_main;
+    }
+
+  }
+}
+
+
+.jpbDes_content{
+  margin-bottom: 25px;
+}
+.jpbDes_content span{
+  font-size: 14px;
+  color: @font_color2;
+  line-height: 22px;
+}
+.jobDes .jobDes_detail{
+  color: @font_color3;
+  line-height: 22px;
+  margin-top: 10px;
+}
+.action .action_collect{
+  width: 64px;
+  height: 34px;
+  background: #FFFFFF;
+  border: 1px solid @card_border_color;
+  border-radius: 2px;
+  margin-right: 8px;
+  line-height: 34px;
+  text-align: center;
+}
+.action .action_share{
+  width: 170px;
+  height: 34px;
+  border: 1px solid @card_border_color;
+  border-radius: 2px;
+  line-height: 34px;
+  text-align: center;
+}
+.action_share .share_tit,.action_collect .share_tit{
+  font-size: 14px;
+  color: @font_color4;
+}

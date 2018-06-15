@@ -1,0 +1,603 @@
+@import "variable";
+
+*, *:after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  font: 14px/1.5 "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica,"\5b8b\4f53";
+  color: @font_color2;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 645070 */
+  src: url('//at.alicdn.com/t/font_645070_oqobewxpyeh1if6r.eot');
+  src: url('//at.alicdn.com/t/font_645070_oqobewxpyeh1if6r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_645070_oqobewxpyeh1if6r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_645070_oqobewxpyeh1if6r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_645070_oqobewxpyeh1if6r.svg#iconfont') format('svg');
+}
+@font-face {
+  font-family: "led24";
+  src: url('../../src/font/24_LED1.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+}
+
+.led24{
+  font-family: "led24" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul{
+  padding: 0;
+  margin: 0;
+}
+a{
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: none;
+}
+li, ol, ul{
+  list-style: none;
+}
+.tc{
+  text-align: center;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+  content: " ";
+  display: block;
+  clear: both;
+}
+.none{
+  display: none;
+}
+.pb10{
+  padding-bottom: 10px;
+}
+
+.ml20{
+  margin-left: 20px;
+}
+.ml25{
+  margin-left: 25px;
+}
+.ml50{
+  margin-left: 50px;
+}
+.mr15{
+  margin-right: 15px;
+}
+.mt30{
+  margin-top: 30px;
+}
+.mt40{
+  margin-top: 40px;
+}
+.mt20{
+  margin-top:20px;
+}
+.mt6{
+  margin-top:6px
+}
+
+.mb50{
+  margin-bottom:50px;
+}
+
+.site-width{
+  width: @site_width;
+  margin: 0 auto;
+}
+
+//首页 顶部导航
+.site-nav{
+  background-color: rgba(0,0,0,.2);
+  //background-image: linear-gradient(-180deg, #023c40 0%, rgba(255,255,255,0) 100%);
+  border-bottom: 1px solid #ffffff6b;
+  transition: all 500ms;
+  color: #ffffff;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  &.hlight{
+    background-color: #022231;
+    border-bottom: 1px solid #022231;
+    position: fixed;
+  }
+
+  &.not-home{
+    position: static;
+    background-color: #022231;
+    border-bottom: 1px solid #022231;
+  }
+
+  .site-logo{
+    float: left;
+    position: relative;
+    padding-left: 50px;
+    margin-top: 10px;
+
+    ._img{
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+    ._main{
+      color: #ffffff;
+      font-size: 16px;
+    }
+    ._sub{
+      color: #ffffff;
+      font-size: 12px;
+    }
+  }
+
+  .nav-list{
+    float: left;
+    margin-left: 175px;
+
+    li a{
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    li{
+      float: left;
+      margin: 0 25px;
+      line-height: 56px;
+
+      &.active{
+        border-bottom: 2px solid @color_main;
+
+        a{
+          color: @color_main;
+        }
+      }
+    }
+
+  }
+
+  .login{
+    float: right;
+    line-height: 60px;
+
+    .btn-login{
+      border: 1px solid @color_main;
+      color: @color_main;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: @card_border_radius;
+      width: 64px;
+      text-align: center;
+      height: 34px;
+      line-height: 34px;
+
+      &:hover{
+        background-color: @color_main;
+        color: #ffffff;
+      }
+    }
+
+    .login-user{
+      width: 85px;
+      height: 60px;
+      cursor: pointer;
+      text-align: center;
+      border: 1px solid transparent;
+
+      &:hover{
+        background-color: #022231;
+        border-left: 1px solid rgba(255,255,255,.1);
+        border-right: 1px solid rgba(255,255,255,.1);
+
+        .ucenter{
+          display: block;
+          background-color: #022231;
+        }
+      }
+
+      .ucenter{
+        display: none;
+        line-height: 38px;
+        padding: 10px 12px;
+        position: relative;
+        z-index: 1000;
+
+        li{
+          cursor: pointer;
+
+          a{
+            color: inherit;
+          }
+
+        }
+
+        .logout{
+          border-top: 1px dashed rgba(255,255,255,.8);
+          padding-top: 5px;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .avatar_wrap{
+      width: 35px;
+      margin: 11px auto;
+      height: 35px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #ffffff;
+
+      & > img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+}
+//页脚
+.footer{
+
+  position: relative;
+  z-index: 666;
+
+  .content{
+    height: 260px;
+    border:1px solid transparent;
+    .bg_gra;
+    z-index: 10;
+    position: relative;
+  }
+
+  & > img {
+    position: absolute;
+    top: -330px;
+    left: 50%;
+    width: 1920px;
+    margin-left: -960px;
+    z-index: 1;
+  }
+  .company_load{
+    max-width: 1060px;
+    height: 100px;
+    margin:0 auto ;
+    margin-top: 80px;
+    .company_logo{
+      margin-right: 112px;
+    }
+    .logo_img{
+      & > img{
+        width: 58px;
+      }
+    }
+    .logo_content{
+      margin-left:8px;
+
+      .logo_tit{
+        font-size: 24px;
+        color: #FFFFFF;
+      }
+      .logo_detail{
+        font-size: 16px;
+        color: #FFFFFF;
+      }
+
+    }
+
+    .load_kind{
+      .load_item{
+        width: 170px;
+        height: 56px;
+        border: 1px solid #FFFFFF;
+        border-radius: @card_border_radius;
+        color: #ffffff;
+        cursor: pointer;
+        line-height: 56px;
+        text-align: center;
+        margin-right: 10px;
+
+        &:hover{
+          border-color: @color_main;
+          background-color: #ffffff;
+          color: @color_main;
+        }
+
+        & > span{
+          font-size: 16px;
+          //color: #FFFFFF;
+        }
+
+      }
+    }
+
+  }
+  .footer_line{
+    height: 1px;
+    opacity: 0.24;
+    border-bottom: 1px dashed @card_border_color;
+    margin-top: 30px;
+  }
+
+  .footer_last{
+    width: @site_width;
+    margin: 0 auto;
+    height: 48px;
+    line-height: 48px;
+    font-size: 12px;
+    color: #ffffff;
+
+    .lastL{
+      float: left;
+    }
+    .lastR{
+      float: right;
+    }
+  }
+
+}
+
+//搜索
+.search-wraper{
+  height: 85px;
+  background-color: #ffffff;
+  width: 885px;
+  margin: 30px auto;
+  position: relative;
+  z-index: 889;
+
+  //&:hover{
+  //  .search-box{
+  //    border: 1px solid @color_main;
+  //
+  //    .search-sel:after{
+  //      border-right-color: @color_main;
+  //    }
+  //  }
+  //}
+
+  .search-box{
+    border: 1px solid @color_main;
+    height: 50px;
+    border-radius: @card_border_radius;
+    position: relative;
+
+    .search-sel-top{
+      position: absolute;
+      top: -30px;
+
+      li{
+        float: left;
+        margin-right: 10px;
+        line-height: 30px;
+        padding: 0 5px;
+        color: @color_main;
+        cursor: pointer;
+
+        &.active{
+          background-color: @color_main;
+          border-radius: @card_border_radius @card_border_radius 0 0;
+          color: #ffffff;
+        }
+      }
+    }
+
+    & > div{
+      float: left;
+    }
+    .search-sel{
+      width: 110px;
+      height: 100%;
+      text-align: center;
+      line-height: 50px;
+      position: relative;
+      color: @font_color3;
+
+      &:after{
+        content: " ";
+        height: 26px;
+        position: absolute;
+        right: 0;
+        top: 12px;
+        border-right: 1px solid @color_main;
+      }
+
+      .selected .iconfont{
+        transition: all 500ms;
+        display: inline-block;
+      }
+
+      ._animate{
+        transform: rotate(180deg);
+      }
+
+      .more-sel{
+        position: absolute;
+        background-color: #ffffff;
+        width: 100%;
+        padding: 0 10px;
+        top:48px;
+        left: 0;
+        border-radius: 0 0 @card_border_radius @card_border_radius;
+        border: 1px solid @card_border_color;
+        .card_box_shadow(0,2px);
+
+        li{
+          cursor: pointer;
+        }
+
+        .t_border{
+          border-top: 1px dashed @card_border_color;
+        }
+      }
+    }
+
+    .search-input-box{
+      width: 630px;
+      height: 100%;
+      position: relative;
+
+      .icon-sousuo{
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        color: #777;
+      }
+
+      ._placeholder{
+        position: absolute;
+        top: 14px;
+        left: 40px;
+        color: @font_color4;
+      }
+
+      ._result{
+        position: absolute;
+        right: 10px;
+        top: 14px;
+        color: @font_color4;
+      }
+      .search-num{
+        font-style: normal;
+        color: @color_prominent;
+      }
+
+      .search-input{
+        height: 48px;
+        border: none;
+        border-radius: @card_border_radius;
+        outline: none;
+        width: 100%;
+        padding-left: 40px;
+
+        &:focus{
+          border: none;
+          outline:none;
+        }
+      }
+    }
+
+    .search-btn{
+      width: 140px;
+      height: 100%;
+      float: right;
+      font-size: 18px;
+      color: #ffffff;
+      cursor: pointer;
+      text-align: center;
+      line-height: 50px;
+      transition: background-image 500ms;
+
+      .bg_gra;
+
+      &:hover{
+        .bg_gra_hover;
+      }
+    }
+
+    .search-hot{
+      position: absolute;
+      bottom: -28px;
+
+      ._ul{
+        float: left;
+      }
+      ._hotitem{
+        float: left;
+        color: @color_main;
+        margin: 0 10px;
+
+        a{
+          color: inherit;
+        }
+      }
+
+    }
+
+
+  }
+}
+
+//分享
+.share-wrap{
+  color: @font_color4;
+
+  .company_share{
+    color: @font_color2;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 0 2px 0 8px;
+    vertical-align: -3px;
+    position: relative;
+
+    &:after{
+      content: " ";
+      position: absolute;
+      height: 15px;
+      right: 0;
+      top: 5px;
+      border-right: 1px solid @card_border_color;
+    }
+    &:last-child{
+      padding-right: 0;
+
+      &:after{
+        content: initial;
+      }
+    }
+
+  }
+
+}
+
+.modal_wrap{
+  position: relative;
+  z-index: 999999;
+  .modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .2);
+  }
+  .modal_cont{
+    position: fixed;
+    border-radius: @card_border_radius;
+    top: 50%;
+    left: 50%;
+    width: 370px;
+    background-color: #ffffff;
+    margin-top: -230px;
+    margin-left: -185px;
+  }
+}

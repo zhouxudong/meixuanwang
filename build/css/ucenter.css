@@ -1,0 +1,201 @@
+.page-cont {
+  width: 1200px;
+  margin: 35px auto;
+}
+.page-cont .cont-l {
+  float: left;
+  width: 935px;
+}
+.page-cont .cont-r {
+  float: right;
+  width: 252px;
+}
+.page-cont .cont-r .ad_list .ad_item {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.page-cont .uc_tit {
+  font-size: 24px;
+  color: #09c5d5;
+  margin-bottom: 10px;
+}
+.search-list .search-item {
+  width: 100%;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  border-bottom: 15px solid #fafafa;
+  cursor: pointer;
+  height: 109px;
+  padding: 15px 25px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.search-list .search-item:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+  border-bottom: 15px solid #fafafa;
+}
+.search-list .search-item ._tit {
+  font-size: 16px;
+  color: #555555;
+  line-height: 30px;
+}
+.search-list .search-item ._sub {
+  color: #999999;
+  margin-top: 5px;
+}
+.search-list .search-item ._job {
+  width: 530px;
+  float: left;
+}
+.search-list .search-item ._job ._tit {
+  position: relative;
+  padding-left: 10px;
+}
+.search-list .search-item ._job ._tit:before {
+  content: " ";
+  position: absolute;
+  height: 15px;
+  border-left: 2px solid #09c5d5;
+  left: 0;
+  top: 8px;
+}
+.search-list .search-item ._job ._addr,
+.search-list .search-item ._job ._edu {
+  font-style: normal;
+  color: #555555;
+}
+.search-list .search-item ._job ._time {
+  color: #FD7A4B;
+}
+.search-list .search-item ._comp {
+  width: 310px;
+  float: left;
+}
+.search-list .search-item .comp-logo {
+  position: absolute;
+  right: 28px;
+  top: 18px;
+  width: 50px;
+  height: 50px;
+}
+.search-list .career-item {
+  height: 104px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  padding: 25px 15px;
+  margin-bottom: 10px;
+}
+.search-list .career-item:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+}
+.search-list .career-item ._tit {
+  font-size: 16px;
+  color: #555555;
+}
+.search-list .career-item ._tit ._act {
+  color: #FD7A4B;
+}
+.search-list .career-item ._sub {
+  color: #999999;
+  margin-top: 8px;
+}
+.search-list .career-item .comp-logo {
+  float: left;
+  height: 50px;
+  margin-right: 10px;
+}
+.search-list .career-item ._comp {
+  width: 257px;
+  float: left;
+  margin-left: 9px;
+}
+.search-list .career-item ._school {
+  width: 215px;
+  float: left;
+}
+.search-list .career-item ._time {
+  width: 260px;
+  float: left;
+}
+.search-list .career-item ._opera {
+  float: left;
+  margin-top: 10px;
+}
+.search-list .career-item ._opera > div {
+  display: inline-block;
+  border: 1px solid #09c5d5;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #09c5d5;
+  cursor: pointer;
+  line-height: 28px;
+  width: 66px;
+  text-align: center;
+}
+.search-list .career-item ._opera > div.btn-addtime {
+  border-color: #cccccc;
+  color: #999999;
+}
+.search-list .career-item ._opera > div:hover {
+  background-color: #09c5d5;
+  color: #ffffff;
+  border-color: #09c5d5;
+}
+.company-list ._item {
+  width: 297px;
+  height: 120px;
+  float: left;
+  margin-right: 22px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 22px;
+  padding: 15px 17px;
+}
+.company-list ._item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.company-list ._item:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+}
+.company-list ._item .fujia {
+  border-top: 1px dashed #eaeeed;
+  line-height: 42px;
+}
+.company-list ._item .fujia ._bracket {
+  color: #FD7A4B;
+}
+.company-list ._item ._cont {
+  margin: 0 0 10px 60px;
+}
+.company-list ._main {
+  font-size: 16px;
+  color: #555555;
+}
+.company-list ._logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+.company-list ._sub {
+  color: #777777;
+  line-height: 2;
+  margin-bottom: 6px;
+}
+.company-list ._job,
+.company-list ._career {
+  color: #999999;
+}
+.company-list ._job {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.company-list ._career {
+  float: right;
+  width: 50%;
+  text-align: right;
+}

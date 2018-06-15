@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../statics/bower_components/swiper/dist/css/swiper.min.css"/>
+
+    <style>
+        *,*:after{
+            box-sizing: border-box;
+        }
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100%;
+            overflow-x: hidden;
+        }
+        .clearfix:after{
+            content: " ";
+            display: block;
+            clear: both;
+        }
+
+        #header{
+            padding-top: 10px;
+            height: 80px;
+            background-color: #efefef;
+
+        }
+        .site-width{
+            width: 1280px;
+            margin: auto;
+        }
+        .site-logo{
+            float: left;
+            width: 60px;
+            height: 60px;
+            background-color: #000;
+            overflow: hidden;
+            border-radius: 50%;
+            padding: 16px 10px;
+        }
+        .site-logo > img{
+            width: 100%;
+        }
+
+        .site-nav{
+            float: left;
+            margin-left: 250px;
+        }
+        .site-nav li{
+            float: left;
+            list-style: none;
+            padding: 0 20px;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 378px;
+        }
+        .slide-item{
+            height: 100%;
+        }
+        .slide-cont{
+            background-color: #007aff;
+            width: 695px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+        }
+
+        .slide-cont > img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mainPages">
+        <div id="header">
+            <div class="site-width">
+                <a class="site-logo" href="###">
+                    <img src="../statics/images/mylogo.png" />
+                </a>
+                <nav class="site-nav clearfix">
+                    <ul>
+                        <li class="">首页</li>
+                        <li class="">H5实例</li>
+                        <li class="">教程</li>
+                        <li class="">易学</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="content">
+            <div class="j-category">
+                <div class="category-cont">
+
+                </div>
+                <div class="banner-cont">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-color: rgb(55, 64, 61)">
+                                <div class="slide-item"></div>
+                                <div class="slide-cont">
+                                    <img src="../statics/images/raw_1523811951.png"/>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background-color: rgb(73, 114, 205)">
+                                <div class="slide-item"></div>
+                                <div class="slide-cont">
+                                    <img src="../statics/images/jianlichaorne.png"/>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background-color: rgb(55, 64, 61)">
+                                <div class="slide-item"></div>
+                                <div class="slide-cont">
+                                    <img src="../statics/images/1523674776.jpg"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="footer">
+
+        </div>
+
+    </div>
+</body>
+<script src="../statics/js/jquery.js"></script>
+<script src="../statics/js/canvasObject/utils.js"></script>
+<script src="../statics/js/canvasObject/segment.js"></script>
+<script src="../statics/js/canvasObject/ball.js"></script>
+<script src="../statics/bower_components/swiper/dist/js/swiper.js"></script>
+<script>
+    //http://service.weibo.com/share/share.php?
+        // url=http%3A%2F%2F36kr.com%2Fnewsflashes%2F119584%230-tsina-1-58393-397232819ff9a47a7b7e80a40613cfe1
+        // &title=%E3%80%9036%E6%B0%AA%E5%BF%AB%E8%AE%AF%E3%80%91%E6%B6%88%E6%81%AF%E7%A7%B0360%E5%B0%86%E6%8B%86%E5%88%86%E6%99%BA%E8%83%BD%E7%A1%AC%E4%BB%B6%E4%B8%9A%E5%8A%A1%EF%BC%8C%E5%91%A8%E9%B8%BF%E7%A5%8E%E5%90%A6%E8%AE%A4
+        // &appkey=595885820
+        // &searchPic=false#_loginLayer_1526293329526
+
+    var swiper = new Swiper('.swiper-container', {
+        zoom: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        effect : 'fade',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    var screenW = $("body").width();
+    var bottom = 378;
+
+
+    var slideRender = {
+        right: screenW,
+        bottom: 378,
+        createCanvas: function (wraper) {
+            var $slideCanvas = $('<canvas width="'+screenW+'" height="'+bottom+'" id="slide1Canvas"></canvas>');
+
+            $slideCanvas.appendTo(wraper);
+
+            return $slideCanvas[0];
+        },
+        createSlide1Canv: function () {
+
+            var canvas = this.createCanvas(".slide-item:eq(0)"),
+                cxt = canvas.getContext("2d"),
+                mouse = utils.captureMouse($(".banner-cont")[0]),
+                segments = [],
+                segments2 = [],
+                numSegments = 5,
+                target, target2;
+            while(numSegments--){
+                segments.push(new Segment(50, 10));
+                segments2.push(new Segment(50, 10));
+            }
+
+            segments[segments.length - 1].x = 300 / 2;
+            segments[segments.length - 1].y = canvas.height / 2;
+
+            segments2[segments2.length - 1].x = (canvas.width - 300 / 2);
+            segments2[segments2.length - 1].y = canvas.height / 2;
+
+
+            function reach(segment, xpos, ypos) {
+                var dx = xpos - segment.x,
+                    dy = ypos - segment.y;
+
+                segment.rotation = Math.atan2(dy, dx);
+
+                var w = segment.getPin().x - segment.x,
+                    h = segment.getPin().y - segment.y;
+                return {
+                    x: xpos - w,
+                    y: ypos - h
+                }
+            }
+            function position(segmentA, segmentB) {
+                segmentA.x = segmentB.getPin().x;
+                segmentA.y = segmentB.getPin().y;
+            }
+
+            function move(segment, i) {
+                if(i !== 0){
+                    target = reach(segment, target.x, target.y);
+                    position(segments[i - 1], segment);
+                }
+            }
+
+            function move2(segment, i) {
+                if(i !== 0){
+                    target2 = reach(segment, target2.x, target2.y);
+                    position(segments2[i - 1], segment);
+                }
+            }
+
+            function draw(segment) {
+                segment.draw(cxt);
+            }
+            (function drawFram() {
+                window.requestAnimationFrame(drawFram, canvas);
+                cxt.clearRect(0, 0, canvas.width, canvas.height);
+
+                target = reach(segments[0], mouse.x, mouse.y);
+                segments.forEach(move);
+                segments.forEach(draw);
+
+                target2 = reach(segments2[0], mouse.x, mouse.y);
+                segments2.forEach(move2);
+                segments2.forEach(draw);
+            }())
+
+
+        },
+        createSlide2Canv: function () {
+
+            var canvas = this.createCanvas(".slide-item:eq(1)"),
+                cxt = canvas.getContext("2d"),
+                dots = [],
+                numDots = 50,
+                friction = 0.95;
+
+            for(var dot, i = 0; i < numDots; i++){
+                dot = new Ball(1, "#00ff00");
+                dot.x = Math.random() * canvas.width;
+                dot.y = Math.random() * canvas.height;
+                dot.vx = 0;
+                dot.vy = 0;
+                dots.push(dot);
+            }
+            function draw(dot) {
+                dot.vx += Math.random() * 0.2 - 0.1;
+                dot.vy += Math.random() * 0.2 - 0.1;
+                dot.y += dot.vy;
+                dot.x += dot.vx;
+                dot.vx *= friction;
+                dot.vy *= friction;
+                if(dot.x > canvas.width){
+                    dot.x = 0;
+                }else if(dot.x < 0){
+                    dot.x = canvas.width;
+                }
+                if(dot.y > canvas.height){
+                    dot.y = 0;
+                }else if(dot.y < 0){
+                    dot.y = canvas.height;
+                }
+                dot.draw(cxt);
+            }
+
+            (function drawFram() {
+                window.requestAnimationFrame(drawFram, canvas);
+                cxt.clearRect(0, 0, canvas.width, canvas.height);
+
+                dots.forEach(draw);
+            }())
+        },
+        createSlide3Canv: function () {
+            var canv = this.createCanvas(".slide-item:eq(2)"),
+                cxt = canv.getContext("2d"),
+
+                bounce = -1,
+                balls = [],
+                numBalls = 18;
+
+            for(var ball, radius, i = 0; i < numBalls; i++){
+                radius = Math.random() * 20 + 15;
+                ball = new Ball(radius, Math.random() * 0xffffff);
+                ball.x = i * 100 + 10;
+                ball.y = i * 50 + 10;
+                ball.vx = Math.random() * 10 - 5;
+                ball.vy = Math.random() * 10 - 5;
+                ball.mass = radius;
+                balls.push(ball);
+            }
+
+
+            function checkWalls(ball) {
+                if(ball.x + ball.radius > canv.width){
+                    ball.x = canv.width - ball.radius;
+                    ball.vx *= bounce;
+                }else if(ball.x - ball.radius < 0){
+                    ball.x = ball.radius;
+                    ball.vx *= bounce;
+                }
+
+                if(ball.y + ball.radius > canv.height){
+                    ball.y = canv.height - ball.radius;
+                    ball.vy *= bounce;
+                }else if(ball.y - ball.radius < 0){
+                    ball.y = ball.radius;
+                    ball.vy *= bounce;
+                }
+            }
+            function move(ball) {
+                ball.x += ball.vx;
+                ball.y += ball.vy;
+                checkWalls(ball);
+            }
+            function rotate(x, y, sin, cos, reverse) {
+                return {
+                    x: (reverse) ? (x * cos + y * sin) : (x * cos - y * sin),
+                    y: (reverse) ? (y * cos - x * sin) : (y * cos + x * sin)
+                }
+            }
+            function checkCollision(ball0, ball1) {
+                var dx = ball1.x - ball0.x,
+                    dy = ball1.y - ball0.y,
+                    dist = Math.sqrt(dx * dx + dy * dy);
+                if(dist < ball1.radius + ball0.radius){
+                    //计算两球之间的角度
+                    var angle = Math.atan2(dy, dx),
+                        sin = Math.sin(angle),
+                        cos = Math.cos(angle);
+
+                    //对小球的位置和速度进行坐标旋转
+                    //旋转后的位置是x0,y0 , x1,y1; 速度是 vx0,vy0, vx1, vy1;
+
+                    //以ball0作为"中心点"，所以它的坐标为（0，0），旋转后也不变；
+                    //旋转ball0后的位置
+                    var pos0 = {x: 0, y: 0};
+
+                    //旋转ball1后的位置
+                    var pos1 = rotate(dx,dy,sin,cos,true);
+
+                    //旋转ball0的速度
+                    var vel0 = rotate(ball0.vx, ball0.vy, sin, cos,true);
+
+                    //旋转ball1的速度
+                    var vel1 = rotate(ball1.vx, ball1.vy, sin, cos, true);
+
+                    //旋转后 x轴上的碰撞
+                    var vxTotal = vel0.x - vel1.x;
+                    vel0.x = ((ball0.mass - ball1.mass) * vel0.x + 2 * ball1.mass * vel1.x) / (ball0.mass + ball1.mass);
+                    vel1.x = vxTotal + vel0.x;
+
+                    //更新位置，避免卡住
+                    var absV = Math.abs(vel0.x) + Math.abs(vel1.x),
+                        overlap = (ball0.radius + ball1.radius) - Math.abs(pos0.x - pos1.x);
+
+                    //pos0.x += vel0.x;
+                    //pos1.x += vel1.x;
+                    pos0.x += vel0.x / absV * overlap;
+                    pos1.x += vel1.x / absV * overlap;
+
+                    //计算完后，位置旋转归位，反旋转
+                    var pos0F = rotate(pos0.x, pos0.y, sin, cos, false),
+                        pos1F = rotate(pos1.x, pos1.y, sin, cos, false);
+
+                    //开始是相对于ball0(0,0)旋转，应该相对于ball0真正的位置
+                    //相对于实际屏幕的位置调整位置
+                    ball1.x = ball0.x + pos1F.x;
+                    ball1.y = ball0.y + pos1F.y;
+                    ball0.x = ball0.x + pos0F.x;
+                    ball0.y = ball0.y + pos0F.y;
+
+                    //速度旋转归位
+                    var vel0F = rotate(vel0.x, vel0.y, sin, cos, false),
+                        vel1F = rotate(vel1.x, vel1.y, sin, cos, false);
+
+                    ball0.vx = vel0F.x;
+                    ball0.vy = vel0F.y;
+                    ball1.vx = vel1F.x;
+                    ball1.vy = vel1F.y;
+                }
+            }
+            function draw(ball) {
+                ball.draw(cxt);
+            }
+            (function drawFram() {
+                window.requestAnimationFrame(drawFram, canv);
+                cxt.clearRect(0, 0, canv.width, canv.height);
+
+                balls.forEach(move);
+
+                balls.forEach(function (ballA, i) {
+                    for(var ballB, j = i + 1; j < balls.length; j++){
+                        ballB = balls[j];
+                        checkCollision(ballA, ballB);
+                    }
+                })
+
+                balls.forEach(draw);
+
+            }())
+        },
+
+        init: function () {
+            this.createSlide1Canv();
+            this.createSlide2Canv();
+            this.createSlide3Canv();
+        }
+    };
+
+    slideRender.init();
+
+    var pper = {"1":"1","2":"2"};
+    var pperArr = [1,2];
+
+    var startTime = new Date().getTime();
+//    console.log(pper['1']);
+    console.log(pperArr[0]);
+
+    console.log(new Date().getTime() - startTime)
+
+
+
+</script>
+</html>

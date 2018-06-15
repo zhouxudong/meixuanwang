@@ -1,0 +1,570 @@
+.sec-tit {
+  color: #333333;
+  font-size: 24px;
+  position: relative;
+  text-align: center;
+}
+.sec-tit:after {
+  content: " ";
+  width: 24px;
+  border-bottom: 1px solid #FD7A4B;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -12px;
+}
+.sec-sub-tit {
+  color: #777777;
+  text-align: center;
+  margin-top: 15px;
+}
+.site-banner .swiper-container {
+  width: 100%;
+  height: 523px;
+}
+.site-banner .slide-cont {
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.site-banner .banner-index {
+  margin-top: -24px;
+  position: relative;
+  z-index: 99;
+  box-shadow: 0 2px 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+  border: none;
+}
+.site-banner .banner-index ._index-item {
+  background-color: #ffffff;
+  float: left;
+  color: #777777;
+  cursor: pointer;
+  position: relative;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  transition: background-color 500ms;
+}
+.site-banner .banner-index ._index-item:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 13px;
+  height: 21px;
+  border-right: 1px solid #eaeeed;
+}
+.site-banner .banner-index ._index-item:first-child {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-left: none;
+}
+.site-banner .banner-index ._index-item:last-child {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.site-banner .banner-index ._index-item:last-child:after {
+  content: initial;
+}
+.site-banner .banner-index ._index-item.active {
+  background-color: #09c5d5;
+  color: #ffffff;
+  background-image: linear-gradient(90deg, #03cbc9 0%, #12abd6 100%);
+}
+.site-banner .banner-index ._index-item.active:after {
+  content: initial;
+}
+.trade-jobs {
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  position: relative;
+  z-index: 888;
+}
+.trade-jobs ._trade {
+  border-bottom: 1px solid #eaeeed;
+  padding-left: 6px;
+}
+.trade-jobs ._trade li {
+  color: #555555;
+  float: left;
+  margin: 0 18px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.trade-jobs ._trade li:hover {
+  color: #09c5d5;
+}
+.trade-jobs ._trade li.active {
+  border-bottom: 2px solid #09c5d5;
+  color: #09c5d5;
+}
+.trade-jobs ._jobs {
+  height: 92px;
+  padding: 15px 0;
+  padding-left: 6px;
+}
+.trade-jobs ._jobs ul {
+  display: none;
+}
+.trade-jobs ._jobs li {
+  float: left;
+  margin: 0 18px;
+  line-height: 35px;
+  position: relative;
+}
+.trade-jobs ._jobs li ._hot {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+}
+.trade-jobs ._jobs li a {
+  color: #777777;
+}
+.trade-jobs ._jobs li:hover a {
+  color: #09c5d5;
+}
+.hot-apply-online {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.hot-apply-online .apply-list {
+  margin-top: 30px;
+}
+.hot-apply-online .allly-item {
+  width: 292px;
+  height: 216px;
+  border: 1px solid #eaeeed;
+  overflow: hidden;
+  border-radius: 2px;
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.hot-apply-online .allly-item ._imgwrap {
+  height: 162px;
+  width: 100%;
+  overflow: hidden;
+}
+.hot-apply-online .allly-item ._imgwrap img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms;
+}
+.hot-apply-online .allly-item ._subtxt {
+  text-align: center;
+  line-height: 55px;
+  color: #555555;
+  font-size: 16px;
+}
+.hot-apply-online .allly-item:nth-of-type(4n) {
+  margin-right: 0;
+}
+.hot-apply-online .allly-item:hover {
+  box-shadow: 0 3px 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+}
+.hot-apply-online .allly-item:hover ._imgwrap > img {
+  transform: scale(1.1);
+}
+.three-sec {
+  margin-top: 40px;
+}
+.three-sec .sec-item {
+  border: 1px solid #eaeeed;
+  height: 479px;
+  border-radius: 2px;
+  width: 389px;
+  float: left;
+  margin-right: 16px;
+  overflow: hidden;
+}
+.three-sec .sec-item:last-child {
+  margin-right: 0;
+}
+.three-sec .sec-item ._tit {
+  font-size: 20px;
+}
+.three-sec .sec-item ._head {
+  height: 60px;
+  color: #ffffff;
+  background-color: #eaeeed;
+  padding: 20px 20px 0;
+  position: relative;
+  background-image: linear-gradient(90deg, #03cbc9 0%, #12abd6 100%);
+}
+.three-sec .sec-item ._head .more {
+  margin-top: 4px;
+  color: #ffffff;
+}
+.three-sec .sec-item ._head .bg_txt {
+  position: absolute;
+  font-size: 34px;
+  opacity: 0.2;
+  top: 3px;
+}
+.three-sec .sec-jobs {
+  padding: 0 20px;
+}
+.three-sec .sec-jobs ._item {
+  border-bottom: 1px dashed #eaeeed;
+  cursor: pointer;
+  position: relative;
+  padding-left: 60px;
+  padding-top: 15px;
+  height: 83.5px;
+}
+.three-sec .sec-jobs .comp-logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  top: 15px;
+}
+.three-sec .sec-jobs .comp-name {
+  color: #555555;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.three-sec .sec-jobs .comp-name:hover {
+  color: #09c5d5;
+}
+.three-sec .sec-jobs .comp-des {
+  color: #999999;
+  font-size: 14px;
+}
+.three-sec .sec-jobs .comp-des .iconfont {
+  font-size: 14px;
+  margin-right: 6px;
+}
+.three-sec .sec-jobs .comp-des .icon-per {
+  margin-left: 20px;
+}
+.ad-banner {
+  height: 200px;
+  background-color: #EEF0EF;
+}
+.last-career {
+  margin-top: 40px;
+}
+.last-career .career-companys {
+  margin-top: 20px;
+}
+.last-career .career-companys ._item {
+  width: 392.5px;
+  height: 85px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  cursor: pointer;
+  float: left;
+  margin-right: 11px;
+  margin-top: 11px;
+  position: relative;
+  padding: 15px 15px 0 80px;
+}
+.last-career .career-companys ._item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.last-career .career-companys ._item:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+}
+.last-career .career-companys .clogo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 15px;
+  top: 15px;
+}
+.last-career .career-companys .comp-name {
+  color: #555555;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.last-career .career-companys .comp-name:hover {
+  color: #09c5d5;
+}
+.last-career .career-companys .comp-des {
+  color: #999999;
+  font-size: 14px;
+}
+.resume-tpl {
+  margin-top: 50px;
+}
+.resume-tpl .resume-list {
+  margin-top: 40px;
+}
+.resume-tpl .resume-list ._item {
+  width: 190px;
+  height: 266px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 11px;
+  float: left;
+  position: relative;
+}
+.resume-tpl .resume-list ._item .cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+.resume-tpl .resume-list ._item .active-img {
+  border: 1px solid #ffffff;
+  height: 60px;
+  width: 60px;
+  margin: 50px auto 10px;
+}
+.resume-tpl .resume-list ._item .word-more {
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  width: 66px;
+  height: 28px;
+  line-height: 26px;
+  margin: 30px auto 0;
+  font-size: 12px;
+}
+.resume-tpl .resume-list ._item .word-more:hover {
+  background-color: #ffffff;
+  color: #09c5d5;
+}
+.resume-tpl .resume-list ._item ._down {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 29, 35, 0.3);
+  opacity: 0;
+  transition: all 500ms;
+}
+.resume-tpl .resume-list ._item ._down ._png {
+  border: 1px solid #ffffff;
+  height: 42px;
+  width: 42px;
+  margin: 100px auto 10px;
+  border-radius: 50%;
+}
+.resume-tpl .resume-list ._item ._down ._txt {
+  color: #ffffff;
+  text-align: center;
+}
+.resume-tpl .resume-list ._item:hover {
+  box-shadow: 0 0 15px 0 rgba(219, 247, 251, 0.5);
+}
+.resume-tpl .resume-list ._item:hover ._down {
+  opacity: 1;
+}
+.resume-tpl .resume-list ._item > img {
+  width: 100%;
+  height: 100%;
+}
+.resume-tpl .resume-list ._item:last-child {
+  margin-right: 0;
+}
+.offer-school {
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+.offer-school .article-list {
+  border: 1px solid #f2f5f4;
+  border-radius: 2px;
+  margin-top: 40px;
+}
+.offer-school .article-list ._item {
+  width: 299px;
+  height: 340px;
+  float: left;
+  padding: 25px 20px;
+  position: relative;
+}
+.offer-school .article-list ._item:last-child:after {
+  content: initial;
+}
+.offer-school .article-list ._item:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  height: 285px;
+  top: 28px;
+  border-right: 1px solid #eaeeed;
+}
+.offer-school .article-list ._guide {
+  font-size: 18px;
+  color: #555555;
+  cursor: pointer;
+  position: relative;
+  padding-left: 10px;
+}
+.offer-school .article-list ._guide:hover {
+  color: #09c5d5;
+}
+.offer-school .article-list ._guide:before {
+  position: absolute;
+  content: " ";
+  height: 17px;
+  border-left: 2px solid #09c5d5;
+  top: 1px;
+  left: 0;
+}
+.offer-school .article-list ._head .fr {
+  color: #777777;
+  margin-top: 0px;
+  font-size: 12px;
+}
+.offer-school .article-list ._head .fr:hover {
+  color: #09c5d5;
+}
+.offer-school .article-list ._imgwrap {
+  height: 137px;
+  overflow: hidden;
+  width: 100%;
+  margin: 15px 0;
+  border-radius: 2px;
+}
+.offer-school .article-list ._imgwrap > img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.offer-school .article-list ._imgwrap > img:hover {
+  transform: scale(1.1);
+}
+.offer-school .article-list .article-a {
+  font-size: 16px;
+}
+.offer-school .article-list .article-a > a {
+  color: #555555;
+}
+.offer-school .article-list .article-a:hover > a {
+  color: #09c5d5;
+}
+.offer-school .article-list .article-q {
+  color: #999999;
+  margin-top: 6px;
+  line-height: 22px;
+}
+.polular {
+  margin-top: 40px;
+}
+.each-trade {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.each-trade .trade-head {
+  margin: 20px auto;
+  height: 44px;
+  position: relative;
+}
+.each-trade .trade-head .line-more {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  background-color: #fff;
+  padding: 0 10px;
+  color: #777777;
+}
+.each-trade .trade-head .line-more:hover {
+  color: #09c5d5;
+}
+.each-trade .trade-head .line-more a {
+  color: inherit;
+}
+.each-trade .trade-head .trade-name {
+  background-color: #ffffff;
+  position: relative;
+  font-size: 16px;
+  float: left;
+}
+.each-trade .trade-head .trade-name ._hangye {
+  color: #09c5d5;
+}
+.each-trade .trade-head .trade-name:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #eaeeed;
+  top: 25px;
+}
+.each-trade .trade-head ._rect {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #09c5d5;
+  display: inline-block;
+}
+.each-trade .trade-head ._txt {
+  display: inline-block;
+  background-color: #ffffff;
+  position: relative;
+  top: -15px;
+  left: -38px;
+  padding: 4px 0;
+}
+.each-trade .trade-head ._line {
+  float: left;
+  width: 100%;
+  margin-top: -27px;
+  border-bottom: 1px solid #eaeeed;
+}
+.each-trade .company-list ._item {
+  width: 292px;
+  height: 120px;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 15px 17px;
+}
+.each-trade .company-list ._item:nth-of-type(4n) {
+  margin-right: 0;
+}
+.each-trade .company-list ._item:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+}
+.each-trade .company-list ._item .fujia {
+  border-top: 1px dashed #eaeeed;
+  line-height: 42px;
+}
+.each-trade .company-list ._item ._cont {
+  margin: 0 0 10px 60px;
+}
+.each-trade .company-list ._main {
+  font-size: 16px;
+  color: #555555;
+}
+.each-trade .company-list ._logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+.each-trade .company-list ._sub {
+  color: #777777;
+  line-height: 2;
+  margin-bottom: 6px;
+}
+.each-trade .company-list ._job,
+.each-trade .company-list ._career {
+  color: #999999;
+}
+.each-trade .company-list ._job {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.each-trade .company-list ._career {
+  float: right;
+  width: 50%;
+  text-align: right;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司详情</title>
+    <link rel="stylesheet" href="../src/layui/css/layui.css"/>
+    <link rel="stylesheet" href="../build/css/common.css"/>
+    <link rel="stylesheet" href="../build/css/company.css" />
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_645070_yu1i5f2dbzxmkj4i.css"/>
+    <script src="//at.alicdn.com/t/font_645070_yu1i5f2dbzxmkj4i.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainPage">
+        <div class="site-nav not-home">
+            <div class="site-width clearfix">
+                <a class="site-logo" title="Offerbar,专注应届职业机会" href="/">
+                    <img class="_img" src="../statics/images/logo.png"/>
+                    <p class="_main">OfferBar</p>
+                    <p class="_sub">专注应届职业机会</p>
+                </a>
+
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="main.html">首页</a> </li>
+                        <li class="active"><a href="applyonline.html">网申</a></li>
+                        <li><a href="career.html">宣讲 · 宣讲会</a> </li>
+                        <li><a href="offerschool.html">Offer学院</a> </li>
+                        <li><a href="#">App</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="company">
+            <div class="compant_tit">
+                <div class="company_main">
+                    <div class="logo fl">
+                        <img src="../statics/images/logo.png"/>
+                    </div>
+                    <div class="fl company_detail">
+                        <span class="company_name">北京TCL集团科技有限公司</span>
+                        <span class="company_attent">+ 关注</span>
+                        <p class="company_http"><a href="https://www.baidu.com/">https://www.baidu.com/</a> </p >
+                        <span class="company_size">上市公司</span>
+                        <span class="company_size">2000人以上</span>
+                        <span class="company_size">移动互联网</span>
+                    </div>
+                    <div class="fr company_ability">
+                        <div class="share-wrap">
+                            分享
+                            <span class="company_share">
+                                <svg class="icon" aria-hidden="true">
+                                    <use data-hover="#icon-weibo-1" data-out="#icon-weibo-" xlink:href="#icon-weibo-"></use>
+                                </svg>
+                            </span>
+
+                            <span class="company_share">
+                                <svg class="icon" aria-hidden="true">
+                                    <use data-hover="#icon-qq1" data-out="#icon-qq" xlink:href="#icon-qq"></use>
+                                </svg>
+                            </span>
+                            <span class="company_share">
+                                <svg class="icon" aria-hidden="true">
+                                    <use data-hover="#icon-weixin-1" data-out="#icon-weixin-" xlink:href="#icon-weixin-"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="company_search">网申入口</div>
+                        <p class="apply_date">网申日期:
+                            <span>4月25日-5月25日</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="company_nav">
+                <ul class="">
+                    <li data-target="companyNews"><a href="company.html#tab=companyNews">公司信息</a> </li>
+                    <li data-target="regulation"><a href="company.html#tab=regulation">招聘简章</a> </li>
+                    <li class="active" data-target="schoolAdvert"><a href="company.html#tab=schoolAdvert">校招职位</a> </li>
+                    <li data-target="dbChoice"><a href="company.html#tab=dbChoice">宣讲 · 双选会</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--职位-->
+        <div class="job-info schoolAdvert">
+            <div class="advertItem clearfix">
+                <div class="jobName fl">
+                    <p>软件工程师(C++)&emsp;&emsp;[全职 实习]</p >
+                    <div class="mt6">
+                        <span><i class="iconfont icon-dingwei"></i> 北京</span>
+                        <span><i class="iconfont icon-xueli"></i> 本科</span>
+                        <span style="margin-right: 46px;"><i class="iconfont icon-renren"></i> 5人</span>
+                        <span class="_profe">专业: 电气自动化、计算机</span>
+                    </div>
+                </div>
+                <div class="toCollect fr">
+                    <i class="iconfont icon-guanzhu"></i> 收藏
+                    <!--<svg class="icon" aria-hidden="true">-->
+                        <!--<use xlink:href="#icon-shoucang-2"></use>-->
+                    <!--</svg> 收藏-->
+                </div>
+                <div class="toCollect _collected fr none">
+                    <i class="iconfont icon-shoucang-2"></i> 已收藏
+                </div>
+            </div>
+
+            <div class="jobDes">
+                <p class="jobDes_des">职位描述 <a href="company.html#tab=schoolAdvert" class="otherjob-btn">查看该公司其他职位</a></p>
+                <div class="jpbDes_content">
+                    <span>专业要求</span>
+                    <p class="jobDes_detail">
+                        1、熟练掌握Java（有着坚实的基础）、springMVC（略懂原理），Mybatis（掌握事物处理、分库分表等技术）<br>
+                        2、熟练掌握常用算法、设计模式，善于用并发包、多线程解决处理实际问题，熟练使用linux常用操作，了解网络编程；<br>
+                        3、熟练掌握resin、tomcat等web容器，了解java虚拟机，可对gc进行调优，熟悉java高版本优缺点；<br>
+                        4、熟练掌握redis、mongo、mysql等缓存与基本数据存储技术5、熟练掌握zookeeper、nginx等常用负载分布式等技术；<br>
+                    </p>
+                </div>
+                <div class="jpbDes_content">
+                    <span>岗位要求</span>
+                    <p class="jobDes_detail">
+                        1、熟练掌握Java（有着坚实的基础）、springMVC（略懂原理），Mybatis（掌握事物处理、分库分表等技术）<br>
+                        2、熟练掌握常用算法、设计模式，善于用并发包、多线程解决处理实际问题，熟练使用linux常用操作，了解网络编程；<br>
+                        3、熟练掌握resin、tomcat等web容器，了解java虚拟机，可对gc进行调优，熟悉java高版本优缺点；<br>
+                        4、熟练掌握redis、mongo、mysql等缓存与基本数据存储技术5、熟练掌握zookeeper、nginx等常用负载分布式等技术；<br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="nowApply">
+                <div class="nowApply_btn">
+                    立即申请
+                </div>
+                <p>网申方式:&nbsp; 企业官网</p>
+            </div>
+
+            <div class="action clearfix">
+                <div class="action_share fr share-wrap">
+                    <span class="share_tit">分享</span>
+                    <span class="company_share">
+                        <svg class="icon" aria-hidden="true">
+                            <use data-hover="#icon-weibo-1" data-out="#icon-weibo-" xlink:href="#icon-weibo-"></use>
+                        </svg>
+                    </span>
+
+                    <span class="company_share">
+                        <svg class="icon" aria-hidden="true">
+                            <use data-hover="#icon-qq1" data-out="#icon-qq" xlink:href="#icon-qq"></use>
+                        </svg>
+                    </span>
+                    <span class="company_share">
+                        <svg class="icon" aria-hidden="true">
+                            <use data-hover="#icon-weixin-1" data-out="#icon-weixin-" xlink:href="#icon-weixin-"></use>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="reminder">
+                <p class="_smTip"><i style="color: orange;font-size: 24px;vertical-align: sub;" class="iconfont icon-xiaotieshi-"></i>小贴士</p>
+                <p>
+                    1、熟练掌握Java（有着坚实的基础）、springMVC（略懂原理），Mybatis（掌握事物处理、分库分表等技术）<br>
+                    2、熟练掌握常用算法、设计模式，善于用并发包、多线程解决处理实际问题，熟练使用linux常用操作，了解网络编程；<br>
+                    3、熟练掌握resin、tomcat等web容器，了解java虚拟机，可对gc进行调优，熟悉java高版本优缺点；<br>
+                    4、熟练掌握redis、mongo、mysql等缓存与基本数据存储技术5、熟练掌握zookeeper、nginx等常用负载分布式等技术；<br>
+                </p>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="footer" >
+            <div class="content">
+                <div class="company_load clearfix">
+                    <div class="company_logo clearfix fl">
+                        <div class="logo_img fl">
+                            <img src="../statics/images/logo.png" style="width: 58px;"/>
+                        </div>
+                        <div class="logo_content fl">
+                            <span class="logo_tit">OfferBar</span>
+                            <p class="logo_detail">专注应届职业机会</p >
+                        </div>
+                    </div>
+                    <div class="load_kind clearfix fl">
+                        <div class="ios load_item fr">
+                            <span>@</span>
+                            <span>IOS客户端</span>
+                            <span> > </span>
+                        </div>
+                        <div class="androw load_item fr">
+                            <span>@</span>
+                            <span>安卓客户端</span>
+                            <span> > </span>
+                        </div>
+                        <div class="public load_item fr">
+                            <span>@</span>
+                            <span>微信公众号</span>
+                            <span> > </span>
+                        </div>
+                        <div class="smallApp load_item fr">
+                            <span>@</span>
+                            <span>微信小程序</span>
+                            <span> > </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_line">
+
+                </div>
+                <div class="footer_last">
+                    <span class="lastL">信息发布&雇主品牌宣传&广告投放&emsp;&emsp;010-9999 999</span>
+                    <span class="lastR">@2018OfferBar.com 京IPC备5978563211号-1&nbsp;北京闲时网络科技有限公司</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="../statics/js/jquery.js"></script>
+<script src="../statics/js/utils.js"></script>
+<script>
+
+    $(".company_nav li").on("click", function () {
+        var target = $(this).data("target");
+
+        $(".company_nav li").removeClass("active");
+        $(this).addClass("active");
+
+        $(".changeTit").hide();
+        $("."+target).show();
+        console.log(target);
+    })
+
+    $(".toCollect").on("click", function () {
+
+        console.log("a")
+        $(this).hide();
+
+        $("._collected").show();
+    })
+
+</script>
+
+</html>

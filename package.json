@@ -1,0 +1,29 @@
+{
+  "name": "offerbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhouxudong/meixuanwang.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhouxudong/meixuanwang/issues"
+  },
+  "homepage": "https://github.com/zhouxudong/meixuanwang#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "gulp-less": "^4.0.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "superagent": "^3.8.3"
+  }
+}

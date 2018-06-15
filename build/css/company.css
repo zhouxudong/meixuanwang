@@ -1,0 +1,408 @@
+.company {
+  background-color: #F2F5F4;
+  padding-top: 45px;
+}
+.company .compant_tit {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.company .company_main {
+  width: 1042px;
+  height: 162px;
+  background: #FFFFFF;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  margin: 0 auto;
+  position: relative;
+  padding: 25px 32px;
+}
+.company .company_main:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+}
+.company .company_main .logo > img {
+  height: 110px;
+  width: 110px;
+}
+.company .company_main .company_name {
+  font-size: 24px;
+  color: #333333;
+}
+.company .company_main .company_detail {
+  margin-left: 20px;
+}
+.company .company_main .company_attent {
+  color: #999999;
+  cursor: pointer;
+  margin-left: 12px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  padding: 4px 8px;
+  vertical-align: text-bottom;
+}
+.company .company_main .company_attent:hover {
+  border: 1px solid #09c5d5;
+  background-color: #09c5d5;
+  color: #ffffff;
+}
+.company .company_main .company_http {
+  margin: 2px 0 25px;
+  color: #09c5d5;
+}
+.company .company_main .company_http > a {
+  color: #09c5d5;
+}
+.company .company_main .company_size {
+  font-size: 12px;
+  color: #777777;
+  margin-right: 17px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  padding: 5.5px 6px;
+}
+.company .company_main .company_ability {
+  float: right;
+  text-align: right;
+}
+.company .company_main .company_search {
+  color: #FFFFFF;
+  cursor: pointer;
+  background-image: linear-gradient(90deg, #03cbc9 0%, #12abd6 100%);
+  border-radius: 2px;
+  display: inline-block;
+  width: 100px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  margin: 12px 0 10px 0;
+}
+.company .company_main .apply_date {
+  color: #999999;
+}
+.company .company_main .apply_date span {
+  color: #555555;
+}
+.company_nav {
+  width: 600px;
+  margin: 0 auto;
+  color: #555555;
+  text-align: center;
+  line-height: 0;
+}
+.company_nav ul {
+  display: inline-block;
+  line-height: 38px;
+}
+.company_nav ul > li {
+  margin: 0 25px;
+  float: left;
+  cursor: pointer;
+}
+.company_nav ul > li.active {
+  color: #09c5d5;
+  border-bottom: 2px solid #09c5d5;
+}
+.changeTit ._ttt {
+  position: relative;
+  z-index: 100;
+  padding: 2px 10px;
+  background-color: #ffffff;
+}
+.changeTit .shadow-font {
+  font-size: 64px;
+  color: #f5f5f5;
+  position: absolute;
+  left: 50%;
+  top: -36px;
+  z-index: 99;
+  margin-left: -28px;
+}
+.info-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.info-wrap .content_tit {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+.info-wrap .content_detail {
+  color: #777777;
+  line-height: 22px;
+  text-align: justify;
+}
+.info-wrap .content_detail img {
+  border-radius: 2px;
+}
+.info-wrap .content_detail a {
+  color: #09c5d5;
+}
+.info-wrap .content_photo {
+  width: 792px;
+  height: 444px;
+}
+.info-wrap .content_map {
+  width: 794px;
+  height: 198px;
+}
+.companyNews .company_intro {
+  margin-top: 40px;
+}
+/*招聘简章*/
+.regulation {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.regulation_content ._cname {
+  font-size: 16px;
+  color: #333333;
+  margin-top: 40px ;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+.regulation_content ._cont {
+  font-size: 14px;
+  color: #777777;
+  line-height: 22px;
+}
+.schoolAdvert {
+  max-width: 1042px;
+  margin: 0 auto;
+}
+.schoolAdvert .advertItem {
+  height: 80px;
+  width: 100%;
+  border-radius: 2px;
+  padding: 15px 23px;
+  border: 1px solid #eaeeed;
+  cursor: pointer;
+  margin-bottom: 18px;
+  position: relative;
+  border-left: 2px solid #09c5d5;
+}
+.schoolAdvert .advertItem:hover {
+  box-shadow: 0 0 10px rgba(56, 81, 76, 0.12);
+  border: 1px solid transparent;
+  border-left: 2px solid #09c5d5;
+}
+.schoolAdvert .advertItem .jobName ._profession,
+.schoolAdvert .advertItem .jobName ._profe {
+  color: #FD7A4B;
+}
+.schoolAdvert .advertItem .jobName p {
+  font-size: 16px;
+  color: #09c5d5;
+}
+.schoolAdvert .advertItem .jobName span {
+  color: #777777;
+  margin-right: 26px;
+}
+.schoolAdvert .advertItem .lookMore {
+  width: 72px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #09c5d5;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 8px;
+  margin-right: 8px;
+  border: 1px solid #09c5d5;
+}
+.schoolAdvert .advertItem .lookMore a {
+  color: inherit;
+  display: block;
+}
+.schoolAdvert .advertItem .lookMore:hover {
+  background: #09c5d5;
+  color: #ffffff;
+}
+.schoolAdvert .advertItem .lookMore p {
+  line-height: 32px;
+  height: 32px;
+}
+/*双选会*/
+.career_table {
+  width: 1042px;
+  margin: 24px auto;
+}
+.career_table .career-cancel td {
+  color: #999999;
+}
+.career_table ._adr {
+  color: #FD7A4B;
+}
+.career_table .add_day {
+  width: 66px;
+  height: 28px;
+  border-radius: 2px;
+  color: #09c5d5;
+  cursor: pointer;
+  border: 1px solid #09c5d5;
+}
+.career_table .add_day._cancel {
+  border: 1px solid #eaeeed;
+  color: #999999;
+}
+.career_table .add_day._cancel:hover {
+  background-color: #ffffff;
+  color: #999999;
+}
+.career_table .add_day:hover {
+  background-color: #09c5d5;
+  color: #ffffff;
+}
+.career_table td,
+.career_table th {
+  text-align: center;
+  height: 56px;
+}
+.career_table th {
+  font-weight: 400;
+  color: #333333;
+}
+.career_table thead {
+  background-color: #f2f5f4;
+}
+.career_table tbody {
+  border: 1px solid #eaeeed;
+  padding: 0 20px;
+}
+.career_table tbody tr {
+  border-bottom: 1px dashed #eaeeed;
+}
+.job-info {
+  max-width: 1042px;
+  margin: 25px auto;
+}
+.job-info .toCollect {
+  color: #555555;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  padding: 0 10px 0 8px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 8px;
+}
+.job-info .toCollect._collected {
+  border: 1px solid #f33030;
+  color: #f33030;
+}
+.job-info .nowApply {
+  text-align: center;
+  margin-top: 40px;
+}
+.job-info .nowApply p {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 8px;
+}
+.job-info .nowApply .nowApply_btn {
+  width: 140px;
+  height: 50px;
+  cursor: pointer;
+  background-image: linear-gradient(90deg, #03cbc9 0%, #12abd6 100%);
+  border-radius: 4px;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: center;
+}
+.job-info .nowApply .nowApply_btn:hover {
+  background-image: linear-gradient(90deg, #09c5d5 0%, #09c5d5 100%);
+}
+.job-info .reminder {
+  width: 100%;
+  background: #F7FCFC;
+  border: 1px solid #eaeeed;
+  margin: 10px 0 50px;
+  padding: 9px 28px 18px;
+}
+.job-info .reminder ._smTip {
+  color: #555555;
+}
+.job-info .reminder span {
+  font-size: 14px;
+  color: #333333;
+  line-height: 22px;
+}
+.job-info .reminder p {
+  color: #999999;
+  line-height: 28px;
+  margin-top: 8px;
+}
+.lookMore p {
+  height: 28px;
+  line-height: 28px;
+}
+.jobDes {
+  margin-top: 40px;
+}
+.jobDes .jobDes_des {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.jobDes .otherjob-btn {
+  float: right;
+  cursor: pointer;
+  width: 128px;
+  height: 28px;
+  line-height: 26px;
+  text-align: center;
+  border: #09c5d5;
+  border: 1px solid #09c5d5;
+  border-radius: 2px;
+  color: #09c5d5;
+  font-size: 12px;
+  font-weight: 400;
+}
+.jobDes .otherjob-btn:hover {
+  border: 1px solid #09c5d5;
+  color: #ffffff;
+  background-color: #09c5d5;
+}
+.jpbDes_content {
+  margin-bottom: 25px;
+}
+.jpbDes_content span {
+  font-size: 14px;
+  color: #555555;
+  line-height: 22px;
+}
+.jobDes .jobDes_detail {
+  color: #777777;
+  line-height: 22px;
+  margin-top: 10px;
+}
+.action .action_collect {
+  width: 64px;
+  height: 34px;
+  background: #FFFFFF;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  margin-right: 8px;
+  line-height: 34px;
+  text-align: center;
+}
+.action .action_share {
+  width: 170px;
+  height: 34px;
+  border: 1px solid #eaeeed;
+  border-radius: 2px;
+  line-height: 34px;
+  text-align: center;
+}
+.action_share .share_tit,
+.action_collect .share_tit {
+  font-size: 14px;
+  color: #999999;
+}

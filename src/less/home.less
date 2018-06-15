@@ -1,0 +1,666 @@
+@import "variable";
+
+.sec-tit{
+  color: @font_color1;
+  font-size: @font_size_bigtit;
+  position: relative;
+  text-align: center;
+
+  &:after{
+    content: " ";
+    width: 24px;
+    border-bottom: 1px solid @color_prominent;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -12px;
+  }
+}
+.sec-sub-tit{
+  color: @font_color3;
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+//banner
+.site-banner{
+  .swiper-container{
+    width: 100%;
+    height: 523px;
+  }
+  .slide-cont{
+    height: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .banner-index{
+    margin-top: -24px;
+    position: relative;
+    z-index: 99;
+    .card_box_shadow(0,2px);
+    border: none;
+
+    ._index-item{
+      background-color: #ffffff;
+      float: left;
+      color: @font_color3;
+      cursor: pointer;
+      position: relative;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      transition: background-color 500ms;
+      //border-left: 1px solid @card_border_color;
+      //border-right: 1px solid @card_border_color;
+      &:after{
+        content: " ";
+        position: absolute;
+        right: 0;
+        top: 13px;
+        height: 21px;
+        border-right: 1px solid @card_border_color;
+      }
+
+
+      &:first-child{
+        border-top-left-radius: @card_border_radius;
+        border-bottom-left-radius: @card_border_radius;
+        border-left: none;
+      }
+      &:last-child{
+        border-top-right-radius: @card_border_radius;
+        border-bottom-right-radius: @card_border_radius;
+        &:after{
+          content: initial;
+        }
+      }
+
+      &.active{
+        background-color: @color_main;
+        color: #ffffff;
+        &:after{
+          content: initial;
+        }
+
+        .bg_gra;
+      }
+    }
+  }
+}
+
+
+//行业 -》 职位
+.trade-jobs{
+  border: 1px solid @card_border_color;
+  border-radius: @card_border_radius;
+  position: relative;
+  z-index: 888;
+
+  ._trade{
+    border-bottom: 1px solid @card_border_color;
+    padding-left: 6px;
+
+    li{
+      color: @font_color2;
+      float: left;
+      margin: 0 18px;
+      line-height:50px;
+      cursor: pointer;
+
+      &:hover{
+        color: @color_main;
+      }
+      &.active{
+        border-bottom: 2px solid @color_main;
+        color: @color_main;
+      }
+    }
+  }
+  ._jobs{
+    height: 92px;
+    padding: 15px 0;
+    padding-left: 6px;
+    ul{
+      display: none;
+    }
+    li{
+      float: left;
+      margin: 0 18px;
+      line-height: 35px;
+      position: relative;
+
+      ._hot{
+        position: absolute;
+        top: -6px;
+        right: -10px;
+      }
+
+      a{
+        color: @font_color3;
+      }
+      &:hover{
+        a{
+          color: @color_main;
+        }
+      }
+    }
+  }
+}
+
+//热门网申
+.hot-apply-online{
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .apply-list{
+    margin-top: 30px;
+  }
+  .allly-item{
+    width: 292px;
+    height: 216px;
+    border: 1px solid @card_border_color;
+    overflow: hidden;
+    border-radius: @card_border_radius;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    ._imgwrap{
+      height: 162px;
+      width: 100%;
+      overflow: hidden;
+
+      img{
+        width: 100%;
+        height: 100%;
+        transition: all 500ms;
+      }
+    }
+
+    ._subtxt{
+      text-align: center;
+      line-height:55px;
+      color: @font_color2;
+      font-size: 16px;
+    }
+
+    &:nth-of-type(4n){
+      margin-right: 0;
+    }
+
+    &:hover{
+      .card_box_shadow(0, 3px);
+
+      ._imgwrap > img{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+//热门网申 （最近更新、即将截止、关注最多）
+.three-sec{
+  margin-top: 40px;
+  .sec-item{
+    border: 1px solid @card_border_color;
+    height: 479px;
+    border-radius: @card_border_radius;
+    width: 389px;
+    float: left;
+    margin-right: 16px;
+    overflow: hidden;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    ._tit{
+      font-size: 20px;
+    }
+    ._head{
+      height: 60px;
+      color: #ffffff;
+      background-color: @card_border_color;
+      padding: 20px 20px 0;
+      position: relative;
+      .bg_gra;
+
+      .more{
+        margin-top: 4px;
+        color: #ffffff;
+      }
+      .bg_txt{
+        position: absolute;
+        font-size: 34px;
+        opacity: 0.2;
+        top: 3px;
+      }
+    }
+  }
+
+  .sec-jobs{
+    padding: 0 20px;
+
+    ._item{
+      border-bottom: 1px dashed @card_border_color;
+      cursor: pointer;
+      position: relative;
+      padding-left: 60px;
+      padding-top: 15px;
+      height: 83.5px;
+    }
+
+    .comp-logo{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 0px;
+      top: 15px;
+    }
+
+    .comp-name{
+      color: @font_color2;
+      font-size: 16px;
+      margin-bottom: 8px;
+
+      &:hover{
+        color: @color_main;
+      }
+    }
+    .comp-des{
+      color: @font_color4;
+      font-size: 14px;
+
+      .iconfont{
+        font-size: 14px;
+        margin-right: 6px;
+      }
+
+      .icon-addr{
+
+      }
+      .icon-per{
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+//广告banner
+.ad-banner{
+  height: 200px;
+  background-color: #EEF0EF;
+}
+
+//近期宣讲会
+.last-career{
+  margin-top: 40px;
+  .career-companys{
+    margin-top: 20px;
+
+    ._item{
+      width: 392.5px;
+      height: 85px;
+      border: 1px solid @card_border_color;
+      border-radius: @card_border_radius;
+      cursor: pointer;
+      float: left;
+      margin-right: 11px;
+      margin-top: 11px;
+      position: relative;
+      padding: 15px 15px 0 80px;
+      &:nth-of-type(3n){
+        margin-right: 0;
+      }
+
+      &:hover{
+        .card_box_shadow(0,0);
+      }
+    }
+    .clogo{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 15px;
+      top: 15px;
+    }
+    .comp-name{
+      color: @font_color2;
+      font-size: 16px;
+      margin-bottom: 6px;
+
+      &:hover{
+        color: @color_main;
+      }
+    }
+    .comp-des{
+      color: @font_color4;
+      font-size: 14px;
+    }
+  }
+}
+
+//简历模板
+.resume-tpl{
+  margin-top: 50px;
+  .resume-list{
+    margin-top: 40px;
+
+    ._item{
+      width: 190px;
+      height: 266px;
+      border: 1px solid @card_border_color;
+      border-radius: @card_border_radius;
+      cursor: pointer;
+      margin-right: 11px;
+      float: left;
+      position: relative;
+
+      .cont{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+        text-align: center;
+      }
+      .active-img{
+        border: 1px solid #ffffff;
+        height: 60px;
+        width: 60px;
+        margin: 50px auto 10px;
+      }
+      .word-more{
+        border: 1px solid #ffffff;
+        border-radius: @card_border_radius;
+        width: 66px;
+        height: 28px;
+        line-height: 26px;
+        margin: 30px auto 0;
+        font-size: 12px;
+
+        &:hover{
+          background-color: #ffffff;
+          color: @color_main;
+        }
+      }
+
+      ._down{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(1,29,35,0.3);
+        opacity: 0;
+        transition: all 500ms;
+
+        ._png{
+          border: 1px solid #ffffff;
+          height: 42px;
+          width: 42px;
+          margin: 100px auto 10px;
+          border-radius: 50%;
+        }
+
+        ._txt{
+          color: #ffffff;
+          text-align: center;
+        }
+      }
+
+      &:hover{
+        box-shadow: 0 0 15px 0 rgba(219, 247, 251, 0.5);
+
+        ._down{
+          opacity: 1;
+        }
+      }
+
+      & > img{
+        width: 100%;
+        height: 100%;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+//offer学院
+.offer-school{
+  margin-bottom: 40px;
+  margin-top: 50px;
+
+  .article-list{
+    border: 1px solid @card_bg_color;
+    border-radius: @card_border_radius;
+    margin-top: 40px;
+
+    ._item{
+      width: 299px;
+      height: 340px;
+      float: left;
+      padding: 25px 20px;
+      position: relative;
+
+      &:last-child:after{
+        content: initial;
+      }
+
+      &:after{
+        content: " ";
+        position: absolute;
+        right: 0;
+        height: 285px;
+        top: 28px;
+        border-right: 1px solid @card_border_color;
+      }
+    }
+
+    ._guide{
+      font-size: 18px;
+      color: @font_color2;
+      cursor: pointer;
+      position: relative;
+      padding-left: 10px;
+
+      &:hover{
+        color: @color_main;
+      }
+
+      &:before{
+        position: absolute;
+        content: " ";
+        height: 17px;
+        border-left: 2px solid @color_main;
+        top: 1px;
+        left: 0;
+      }
+    }
+    ._head .fr{
+      color: @font_color3;
+      margin-top: 0px;
+      font-size: 12px;
+
+      &:hover{
+        color: @color_main;
+      }
+    }
+    ._imgwrap{
+      height: 137px;
+      overflow: hidden;
+      width: 100%;
+      margin: 15px 0;
+      border-radius: @card_border_radius;
+
+      & > img{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 500ms;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+    .article-a{
+      font-size: 16px;
+      & > a{
+        color: @font_color2;
+      }
+      &:hover{
+        & > a{
+          color: @color_main;
+        }
+      }
+
+
+    }
+    .article-q{
+      color: @font_color4;
+      margin-top: 6px;
+      line-height: 22px;
+    }
+  }
+}
+
+//校招名企
+.polular{
+  margin-top: 40px;
+}
+.each-trade{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  .trade-head{
+    margin: 20px auto;
+    height: 44px;
+    position: relative;
+
+    .line-more{
+      position: absolute;
+      right: 0;
+      top: 15px;
+      background-color: #fff;
+      padding: 0 10px;
+      color: @font_color3;
+
+      &:hover{
+        color: @color_main;
+      }
+
+      a{
+        color: inherit;
+      }
+    }
+    .trade-name{
+      background-color: #ffffff;
+      position: relative;
+      font-size: 16px;
+      float: left;
+
+      ._hangye{
+        color: @color_main;
+      }
+
+      &:after{
+        content: " ";
+        position: absolute;
+        right: 0;
+        width: 5px;
+        height: 5px;
+        background-color: @card_border_color;
+        top: 25px;
+      }
+    }
+
+    ._rect{
+      width: 44px;
+      height: 44px;
+      border: 1px solid @color_main;
+      display: inline-block;
+    }
+    ._txt{
+      display: inline-block;
+      background-color: #ffffff;
+      position: relative;
+      top: -15px;
+      left: -38px;
+      padding: 4px 0;
+    }
+    ._line{
+      float: left;
+      width: 100%;
+      margin-top: -27px;
+      border-bottom: 1px solid @card_border_color;
+    }
+  }
+
+  .company-list{
+    ._item{
+      width: 292px;
+      height: 120px;
+      float: left;
+      margin-right: 10px;
+      border: 1px solid @card_border_color;
+      border-radius: @card_border_radius;
+      cursor: pointer;
+      margin-top: 10px;
+      padding: 15px 17px;
+
+      &:nth-of-type(4n){
+        margin-right: 0;
+      }
+
+      &:hover{
+        .card_box_shadow(0, 0);
+      }
+
+      .fujia{
+        border-top: 1px dashed @card_border_color;
+        line-height: 42px;
+      }
+      ._cont{
+        margin: 0 0 10px 60px;
+      }
+    }
+    ._main{
+      font-size: 16px;
+      color: @font_color2;
+    }
+    ._logo{
+      float: left;
+      width: 50px;
+      height: 50px;
+    }
+    ._sub{
+      color: @font_color3;
+      line-height: 2;
+      margin-bottom: 6px;
+    }
+
+    ._job, ._career{
+      color: @font_color4;
+    }
+    ._job{
+      float: left;
+      width: 50%;
+      text-align: left;
+      //border-right: 1px dashed @card_border_color;
+    }
+    ._career{
+      float: right;
+      width: 50%;
+      text-align: right;
+    }
+  }
+
+}

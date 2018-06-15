@@ -1,0 +1,154 @@
+@import "variable";
+.offerScl{
+  max-width: 1200px;
+  margin:0 auto 68px;
+
+  .offerScl_articleTit{
+    font-size: 20px;
+    color: @font_color1;
+    text-align: center;
+    margin-top: 22px;
+  }
+  .offerScl_path{
+    height: 30px;
+    line-height: 30px;
+    color: @font_color4;
+  }
+
+  .article_item{
+    width: 291.5px;
+    height: 292px;
+    border: 1px solid @card_border_color;
+    overflow: hidden;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #fff;
+    margin-right: 11px;
+    margin-bottom: 12px;
+
+    ._imgwrap{
+      height: 164px;
+      overflow: hidden;
+      img{
+        transition: all 500ms;
+
+      }
+    }
+
+    &:hover{
+      .card_box_shadow(0,2px);
+
+      ._imgwrap img{
+        transform: scale(1.1);
+      }
+
+
+    }
+
+
+    &:nth-of-type(4n){
+      margin-right:0;
+    }
+    .article_img{
+      width: 100%;
+      height: 164px;
+    }
+
+    .article_degist{
+      padding: 14px 22px 14px 20px;
+    }
+
+    .article_tit{
+      font-size: 16px;
+      color: @font_color2;
+      margin-bottom: 6px;
+    }
+
+    .article_cont{
+      color: @font_color4;
+      text-align: justify;
+      line-height: 22px;
+    }
+  }
+}
+
+//offer学院  文章详情
+.offerScl{
+  .offerScl_content{
+    margin: 2px 0 34px;
+  }
+  .offerScl_contentL{
+    width: @cont_l_width;
+    background-color: #ffffff;
+    height: auto;
+  }
+  .offerScl_contentR{
+    width: @cont_r_width;
+    background-color: #F2F5F4;
+    margin-left: 10px;
+
+    .contentR_item{
+      margin-bottom: 10px;
+
+      & > img{
+        width: 100%;
+        height: 154px;
+      }
+    }
+  }
+
+  .offerScl_contentL{
+    padding: 33px 34px;
+
+    .contentL_tit {
+      font-size: 22px;
+      color: @font_color2;
+      width: 800px;
+      margin: 8px auto 0;
+    }
+
+    .contentL_titSec{
+      margin: 8px auto 0;
+      color: @font_color4;
+      width: 800px;
+      padding-bottom: 24px;
+    }
+    .contentDet{
+      border-top: 1px dashed @card_border_color;
+      padding: 23px 0;
+      border-bottom: 1px dashed @card_border_color;
+      width: 800px;
+      margin: auto;
+
+      .contentDet_head{
+        font-size: 14px;
+        color: @font_color2;
+        letter-spacing: 1px;
+        text-align: justify;
+        line-height: 24px;
+      }
+
+      .contentDet_pic{
+        margin:19px auto 24px;
+
+        .contentDet_img{
+          height: 410px;
+          width: 100%;
+        }
+      }
+    }
+
+  }
+  .contentOrig{
+    width: 800px;
+    margin:24px auto 0;
+    font-size: 14px;
+    color: @font_color2;
+    text-align: justify;
+    line-height: 22px;
+
+    .fontCol{
+      color: #09C5D5;
+    }
+  }
+}

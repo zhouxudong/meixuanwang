@@ -1,0 +1,75 @@
+//网站内容区域宽度
+@site_width: 1200px;
+
+//左右布局
+@cont_l_width: 935px;
+@cont_r_width: 252px;
+
+//主色
+@color_main: #09c5d5;
+//显色
+@color_prominent: #FD7A4B;
+//二次色
+@color_secondary: #FD7A4B;
+
+//用于标题或比较重要的文字
+@font_color1: #333333;
+//用于副标题或者大篇幅内容的文字
+@font_color2: #555555;
+
+//次级，多用于提示性文字
+@font_color3: #777777;
+
+@font_color4: #999999;
+
+
+//提示性文字大小
+@font_size_tip: 12px;
+//常规性阅读文字
+@font_size_common: 14px;
+//板块标题性文字
+@font_size_boxtit: 16px;
+//按钮文字大小
+@font_size_btn: 18px;
+//大标题文字大小
+@font_size_bigtit: 24px;
+
+//用于卡片式描边颜色
+@card_border_color: #eaeeed;
+//背景色
+@card_bg_color: #f2f5f4;
+//卡片圆角
+@card_border_radius: 2px;
+//卡片式投影 阴影
+.card_box_shadow(@x, @y){
+  box-shadow: @x @y 10px rgba(56,81,76,.12);
+  border:1px solid transparent;
+}
+
+
+//背景渐变 主要用于按钮，底栏，重要位置
+.bg_gra(){
+  background-image: linear-gradient(90deg, #03cbc9 0%, #12abd6 100%);
+}
+
+.bg_gra_hover(){
+  background-image: linear-gradient(90deg, @color_main 0%, @color_main 100%);
+}
+
+.btn(){
+
+}
+
+.search_btn_common(){
+  border-radius: @card_border_radius;
+  color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+
+  .bg_gra;
+
+  &:hover{
+    background-image: linear-gradient(to right, #0ed1bd, #0ed1bd);
+  }
+}

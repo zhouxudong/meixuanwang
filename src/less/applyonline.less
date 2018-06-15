@@ -1,0 +1,460 @@
+@import "variable";
+
+.header{
+  background-color: #F1F5F4;
+  height: 180px;
+  border: 1px solid transparent;
+}
+
+.main-content{
+  width: @site_width;
+  margin: 0 auto 56px;
+  padding-top: 30px;
+  .cont-l{
+    width: @cont_l_width;
+    float: left;
+  }
+  .cont-r{
+    width: @cont_r_width;
+    float: right;
+  }
+
+}
+
+.ad_list{
+  .ad_item{
+    margin-bottom:5px;
+    cursor: pointer;
+  }
+}
+
+.d-selector{
+
+  @marginNum: 3px;
+
+
+  border: 1px solid @card_border_color;
+  border-radius: @card_border_radius;
+  padding: 0 35px 15px;
+
+  &:hover{
+    .card_box_shadow(0,0);
+  }
+
+  .sl-tit{
+    border-bottom: 1px dashed @card_border_color;
+    padding:10px 0;
+    line-height: 28px;
+
+    .clear-chose{
+      margin: @marginNum 10px;
+      color: @font_color4;
+      cursor: pointer;
+    }
+
+  }
+
+  .sl-wrap{
+    margin: 10px 0;
+
+    .sl-key {
+      line-height: 24px;
+    }
+
+  }
+
+  .sl-key{
+    float: left;
+    width: 130px;
+    text-align: left;
+    margin: @marginNum 0;
+
+    .active{
+      background-color: @color_main;
+      cursor: pointer;
+      color: #ffffff;
+      border-radius: @card_border_radius;
+      padding: 0px 10px;
+      line-height: 24px;
+      display: inline-block;
+    }
+
+    ._key{
+      color: @font_color4;
+    }
+  }
+  .sl-chosed{
+    float: left;
+
+    ._close{
+      cursor: pointer;
+    }
+
+    li{
+      float: left;
+      margin: @marginNum 16px 0 0;
+      padding: 0 10px;
+      border: 1px dashed @color_main;
+      border-radius: @card_border_radius;
+      color: @color_main;
+    }
+  }
+  .sl-value{
+    margin-left: 130px;
+
+    .sl-v-list{
+      li{
+        float: left;
+        margin: @marginNum 0;
+        padding: 0 15px;
+        line-height: 24px;
+        cursor: pointer;
+        color: @font_color2;
+
+        &._date{
+          margin-left: 25px;
+          color: @color_main;
+
+        }
+        &._allcity{
+          color: @color_main;
+        }
+        &._allSch{
+          color: @color_main;
+        }
+        .dateFilter{
+          width: 70px;
+          height: 20px;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          left: -55px;
+          font-size: 0;
+        }
+
+        &.active{
+          background-color: @color_main;
+          color: #ffffff;
+          border-radius: @card_border_radius;
+        }
+      }
+    }
+  }
+}
+
+
+.search-result{
+  margin: 30px auto;
+
+  .search-filter{
+    border-bottom: 1px solid @card_border_color;
+    margin-bottom: 20px;
+    li{
+      cursor: pointer;
+      float: left;
+      margin-right: 50px;
+      line-height: 36px;
+      color: @font_color4;
+
+      &.active{
+        color: @color_main;
+        border-bottom: 1px solid @color_main;
+      }
+    }
+  }
+
+  //公司
+  .company-list{
+    ._item{
+      width: 297px;
+      height: 120px;
+      float: left;
+      margin-right: 22px;
+      border: 1px solid @card_border_color;
+      border-radius: @card_border_radius;
+      cursor: pointer;
+      margin-bottom: 22px;
+      padding: 15px 17px;
+
+      &:nth-of-type(3n){
+        margin-right: 0;
+      }
+
+      &:hover{
+        .card_box_shadow(0, 0);
+      }
+
+      .fujia{
+        border-top: 1px dashed @card_border_color;
+        line-height: 42px;
+
+        ._bracket{
+          color: @color_secondary;
+        }
+      }
+      ._cont{
+        margin: 0 0 10px 60px;
+      }
+    }
+    ._main{
+      font-size: 16px;
+      color: @font_color2;
+    }
+    ._logo{
+      float: left;
+      width: 50px;
+      height: 50px;
+    }
+    ._sub{
+      color: @font_color3;
+      line-height: 2;
+      margin-bottom: 6px;
+    }
+
+    ._job, ._career{
+      color: @font_color4;
+    }
+    ._job{
+      float: left;
+      width: 50%;
+      text-align: left;
+      //border-right: 1px dashed @card_border_color;
+    }
+    ._career{
+      float: right;
+      width: 50%;
+      text-align: right;
+    }
+  }
+
+  .search-list{
+
+    //网申
+    .search-item{
+      width: 100%;
+      border: 1px solid @card_border_color;
+      border-radius: @card_border_radius;
+      border-bottom: 15px solid #fafafa;
+      cursor: pointer;
+      height: 109px;
+      padding: 15px 25px;
+      position: relative;
+      margin-bottom: 10px;
+      &:hover{
+        .card_box_shadow(0,0);
+
+        border-bottom: 15px solid #fafafa;
+      }
+      ._tit{
+        font-size: 16px;
+        color: @font_color2;
+        line-height: 30px;
+      }
+      ._sub{
+        color: @font_color4;
+        margin-top: 5px;
+      }
+
+      ._job{
+        width: 530px;
+        float: left;
+
+        ._tit{
+          position: relative;
+          padding-left: 10px;
+          &:before{
+            content: " ";
+            position: absolute;
+            height: 15px;
+            border-left: 2px solid @color_main;
+            left: 0;
+            top: 8px;
+          }
+        }
+
+        ._addr, ._edu{
+          font-style: normal;
+          color: @font_color2;
+        }
+        ._time{
+          color: @color_secondary;
+        }
+      }
+      ._comp{
+        width: 310px;
+        float: left;
+      }
+      .comp-logo{
+        position: absolute;
+        right: 28px;
+        top: 18px;
+        width: 50px;
+        height: 50px;
+      }
+
+    }
+
+    //宣讲·宣讲会
+    .career-item{
+      height: 104px;
+      border: 1px solid @card_border_color;
+      border-radius: @card_border_radius;
+      padding: 25px 15px;
+      margin-bottom: 10px;
+      &:hover{
+        .card_box_shadow(0,0);
+      }
+
+
+      ._tit{
+        font-size: 16px;
+        color: @font_color2;
+
+        ._act{
+          color: @color_secondary;
+        }
+      }
+      ._sub{
+        color: @font_color4;
+        margin-top: 8px;
+      }
+      .comp-logo{
+        float: left;
+        //width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      ._comp{
+        width: 257px;
+        float: left;
+        margin-left: 9px;
+      }
+      ._school{
+        width:215px;
+        float: left;
+      }
+      ._time{
+        width: 260px;
+        float: left;
+      }
+      ._opera{
+        float: left;
+        margin-top: 10px;
+        & > div{
+          display: inline-block;
+          border: 1px solid @color_main;
+          border-radius: 2px;
+          font-size: 12px;
+          color: @color_main;
+          cursor: pointer;
+          line-height: 28px;
+          width: 66px;
+          text-align: center;
+
+          &.btn-addtime{
+            border-color: #cccccc;
+            color: @font_color4;
+          }
+
+          &:hover{
+            background-color: @color_main;
+            color: #ffffff;
+            border-color: @color_main;
+
+          }
+        }
+      }
+    }
+
+
+    //第一版 块式布局
+    //.search-item{
+    //  width: 292px;
+    //  height: 162px;
+    //  border-radius: @card_border_radius;
+    //  border: 1px solid @card_border_color;
+    //  cursor: pointer;
+    //  padding: 8px 17px;
+    //  float: left;
+    //  margin-right: 10px;
+    //  margin-bottom: 10px;
+    //
+    //  &:nth-of-type(4n){
+    //    margin-right: 0px;
+    //  }
+    //  &:hover{
+    //    .card_box_shadow(0,0);
+    //  }
+    //
+    //  ._sub{
+    //    color: @font_color4;
+    //  }
+    //  ._job{
+    //    border-bottom: 1px dashed @card_border_color;
+    //    padding-bottom: 8px;
+    //    margin-bottom: 16px;
+    //    ._tit{
+    //      line-height: 40px;
+    //      color: @font_color2;
+    //      font-weight: 400;
+    //    }
+    //  }
+    //  ._comp{
+    //    ._tit{
+    //      margin-bottom: 5px;
+    //    }
+    //  }
+    //  ._tit{
+    //    font-size: 16px;
+    //  }
+    //  ._edu{
+    //    margin-left: 20px;
+    //  }
+    //  ._time{
+    //    float: right;
+    //  }
+    //
+    //  .comp-logo{
+    //    float: left;
+    //    width: 50px;
+    //    height: 50px;
+    //  }
+    //  .comp-cont{
+    //    margin-left: 65px;
+    //  }
+    //}
+  }
+
+  .more-jobs{
+    width: 388px;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid @color_main;
+    border-radius: @card_border_radius;
+    cursor: pointer;
+    color: @color_main;
+    margin: 30px auto 0;
+    font-size: 16px;
+
+    &:hover{
+      background-color: @color_main;
+      color: #ffffff;
+    }
+  }
+}
+.cont-tip{
+  height: 90px;
+  border: 1px solid @card_border_color;
+  border-radius: @card_border_radius;
+  background-color: #F7FCFC;
+  padding: 12px 20px;
+  color: @font_color4;
+
+  ._smTip{
+    color: @font_color3;
+    margin-bottom: 2px;
+  }
+
+}
